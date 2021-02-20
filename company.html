@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=yes"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <title>AiR-Wi-Fi</title>
+    <meta name="description" content="" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+
+  <body id="top">
+    <div id="hamburger">
+      <div class="hamburger_btn" @click="ActiveBtn=!ActiveBtn">
+        <span
+          class="line line_01"
+          v-bind:class="{'btn_line01':ActiveBtn}"
+        ></span>
+        <span
+          class="line line_02"
+          v-bind:class="{'btn_line02':ActiveBtn}"
+        ></span>
+        <span
+          class="line line_03"
+          v-bind:class="{'btn_line03':ActiveBtn}"
+        ></span>
+      </div>
+      <transition name="menu">
+        <div class="menu" v-show="ActiveBtn">
+          <ul class="nav">
+            <li><a href="index.html">TOP</a></li>
+            <li><a href="index.html#point">ポイント</a></li>
+            <li><a href="index.html#flow">ご利用の流れ</a></li>
+            <li><a href="index.html#price">各種料金</a></li>
+            <li><a href="index.html#option">オプション</a></li>
+            <li><a href="index.html#overseas">海外利用</a></li>
+            <li><a href="index.html#faq">Q＆A</a></li>
+            <li class="nav-btn"><a href="delivery.html">お申し込み</a></li>
+            </li>
+          </ul>
+        </div>
+      </transition>
+    </div>
+    <header id="header" class="header">
+      <div class="header-logo">
+        <h1>
+          <a href="index.html"
+            ><img
+              src="img/common/header-logo.png"
+              srcset="
+                img/common/header-logo.png    1x,
+                img/common/header-logo-2x.png 2x
+              "
+              alt="AiR-Wi-Fi(エアワイファイ)"
+          /></a>
+        </h1>
+      </div>
+      <ul class="nav">
+        <li><a href="index.html">TOP</a></li>
+        <li><a href="index.html#point">ポイント</a></li>
+        <li><a href="index.html#flow">ご利用の流れ</a></li>
+        <li><a href="index.html#price">各種料金</a></li>
+        <li><a href="index.html#option">オプション</a></li>
+        <li><a href="index.html#overseas">海外利用</a></li>
+        <li><a href="index.html#faq">Q＆A</a></li>
+        <li class="nav-btn"><a href="delivery.html">お申し込み</a></li>
+      </ul>
+    </header>
+    <main class="main">
+      <section class="company">
+        <h2>会社概要・特定商取引法に基づく表記</h2>
+        <table>
+          <tbody>
+            <tr><th>会社名</th><td>株式会社Ocean Map</td></tr>
+            <tr><th>所在地</th><td>〒 101-0025 東京都千代田区神田佐久間町一丁目8番4号　アルテール秋葉原708</td></tr>
+            <tr><th>設立日</th><td>2021年1月21日</td></tr>
+            <tr><th>代表者</th><td>代表取締役　山本将聖</td></tr>
+            <tr><th>お問い合わせ先</th><td>株式会社Ocean</td></tr>
+            <tr><th>会社名</th><td>AiR-WiFIカスタマーセンター：support@air-wi-fi.com<br>
+              現在お問い合わせにつきましてはメール対応のみとなっております<br>
+              受付時間：平日 11:00-19:00 / 土日祝はのぞく</td></tr>
+            <tr><th>お支払い方法</th><td>クレジットカード( VISA/JCB/MasterCard/AMERICAN EXPRESS/DinersClub)</td></tr>
+            <tr><th>商品代金以外に必要な料金</th><td>・契約事務手数料：3,000円(税抜)<br>
+              ・月額料金：3.080円(税抜)～※各プランによって異なります<br>
+              ・解約事務手数料：0円、5.000円(税抜)、9.000円(税抜)※各プランによって異なります。<br>
+              ・契約解約時に箱・説明書・ケーブルなどの付属品に欠品がある場合、<br>
+              　過度の汚損、破損がある場合追加費用として20,000円(税抜)が発生します。<br>
+              <br>
+              <b>任意</b><br>
+              ・契約期間縛りなしオプション料：月額600円(税抜)<br>
+              ・あんしんオプション料：月額500円(税抜)<br>
+              ・海外利用時は非課税になります。詳細は<a href="correspondence.html" target="_blank">こちら</a>よりご確認ください。
+              </td></tr>
+            <tr><th>代金のお支払い時期</th><td>申し込み日が利用月となり、出荷前に１ヶ月分の費用決済をいたします。<br>
+              月額料金は毎月1日が決済となります。<br>
+              ※クレジットカード決済のタイミングはカード会社ごとに異なります。</td></tr>
+            <tr><th>商品の引き渡し時期</th><td>平日正午までの申し込みで最短即日発送となり、<br>
+              発送混雑状況により変動することがございます。<br>
+              土日祝の場合は翌営業日に発送いたします。</td></tr>
+            <tr><th>送料</th><td>端末返却の時の送料はお客様負担となります。<br>
+              初期不良があった際は弊社が送料を負担いたします。</td></tr>
+            <tr><th>返品・不良品について</th><td>初期不良につきましては無償で交換致しますので、端末到着から1週間以内に
+              当社カスタマーセンターまでご連絡ください。<br>
+              お客様都合による出荷後の返品、交換は送料等がお客様負担となる場合がございます。
+              </td></tr>
+              <tr><th>契約違約金</th><td>1年未満：9.000円(税抜)<br>
+                1～2年未満：5.000円(税抜)<br>
+                2年～：0円(税抜)<br>
+                ※各プランによって異なります</td></tr>
+              <tr><th>キャンセル</th><td>申し込み後のキャンセルについては承っておりません。</td></tr>
+              <tr><th>利用規約</th><td>利用規約については<a href="">こちら</a>をご確認ください。</td></tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-nav">
+        <ul>
+          <li><a href="">お問い合わせ</a></li>
+          <li><a href="">利用規約</a></li>
+          <li><a href="">プライバシーポリシー</a></li>
+          <li><a href="">会社概要・特定商取引法に基づく表記</a></li>
+        </ul>
+      </div>
+      <div class="footer-logo">
+        <a href="index.html"><img src="img/common/footer-logo.png" srcset="img/common/footer-logo.png 1x, img/common/footer-logo-2x.png 2x" alt="AiR-Wi-Fi(エアワイファイ)"></a>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <script src="js/lib/ofi.js"></script>
+    <script src="js/common.js"></script>
+    <script>
+      objectFitImages()
+    </script>
+  </body>
+</html>

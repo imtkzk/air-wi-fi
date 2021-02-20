@@ -1,0 +1,12 @@
+//compileExpanded: ../css/$1.css
+
+@import "base/reset";
+@import "base/variable";
+@import "base/base";
+@import "base/utils";
+
+@import "common";
+@import "top";
+@import "correspondence";
+@import "form";
+@import "company";

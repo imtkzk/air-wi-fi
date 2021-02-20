@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=yes">
+  <meta name="format-detection" content="telephone=no">
+  <title>AiR-Wi-Fi</title>
+  <meta name="description" content="">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body id="top">
+  <div id="hamburger">
+    <div class="hamburger_btn" @click="ActiveBtn=!ActiveBtn">
+      <span
+        class="line line_01"
+        v-bind:class="{'btn_line01':ActiveBtn}"
+      ></span>
+      <span
+        class="line line_02"
+        v-bind:class="{'btn_line02':ActiveBtn}"
+      ></span>
+      <span
+        class="line line_03"
+        v-bind:class="{'btn_line03':ActiveBtn}"
+      ></span>
+    </div>
+    <transition name="menu">
+      <div class="menu" v-show="ActiveBtn">
+        <ul class="nav">
+          <li><a href="index.html">TOP</a></li>
+          <li><a href="index.html#point">ポイント</a></li>
+          <li><a href="index.html#flow">ご利用の流れ</a></li>
+          <li><a href="index.html#price">各種料金</a></li>
+          <li><a href="index.html#option">オプション</a></li>
+          <li><a href="index.html#overseas">海外利用</a></li>
+          <li><a href="index.html#faq">Q＆A</a></li>
+          <li class="nav-btn"><a href="delivery.html">お申し込み</a></li>
+          </li>
+        </ul>
+      </div>
+    </transition>
+  </div>
+  <header id="header" class="header">
+      <div class="header-logo">
+        <h1><a href="index.html"><img src="img/common/header-logo.png"
+              srcset="img/common/header-logo.png 1x, img/common/header-logo-2x.png 2x" alt="AiR-Wi-Fi(エアワイファイ)"></a></h1>
+      </div>
+      <ul class="nav">
+        <li><a href="#">TOP</a></li>
+        <li><a href="#point">ポイント</a></li>
+        <li><a href="#flow">ご利用の流れ</a></li>
+        <li><a href="#spec">各種料金</a></li>
+        <li><a href="#option">オプション</a></li>
+        <li><a href="#oversea">海外利用</a></li>
+        <li><a href="#faq">Q＆A</a></li>
+        <li class="nav-btn"><a href="delivery.html">お申し込み</a></li>
+      </ul>
+    </div>
+  </header>
+  <main class="main">
+    <section class="mv">
+      <div class="cont left">
+        <div class="mv-catch01-box">
+          <ul>
+            <li>最短即日配送</li>
+            <li><span>3</span>キャリア対応</li>
+            <li>最大<span>100GB</span>利用可能</li>
+          </ul>
+        </div>
+        <div class="mv-img none--sp">
+          <img src="img/top/products.png" srcset="img/top/products.png 1x, img/top/products-2x.png 2x" alt="AiR-Wi-Fi商品"
+            class="img--fit">
+        </div>
+      </div>
+      <div class="cont right">
+        <div class="mv-catch02">選べる<span>3</span>つのプラン</div>
+        <div class="mv-logo none--sp"><img src="img/top/mv-logo.png" srcset="img/top/mv-logo.png 1x, img/top/mv-logo-2x.png 2x"
+            alt="AiR-Wi-Fi(エアワイファイ)" class="img--fit"></div>
+        <div class="mv-price"><img src="img/top/mv-price.png"
+            srcset="img/top/mv-price.png 1x, img/top/mv-price-2x.png 2x" alt="月額2,980円" class="img--fit"></div>
+            <div class="mv-img none--pc">
+              <img src="img/top/products.png" srcset="img/top/products.png 1x, img/top/products-2x.png 2x" alt="AiR-Wi-Fi商品"
+                class="img--fit">
+            </div>
+        <ul class="btn-box">
+          <li class="btn btn-primary"><a href="delivery.html"><div class="btn-img"><img src="img/top/btn-primary-logo.png"
+                srcset="img/top/btn-primary-logo.png 1x, img/top/btn-primary-logo-2x.png 2x"
+                alt="AiR-Wi-Fi(エアワイファイ)" class="img--fit"></div><div>を</div><span>お申し込みする</span></a></li>
+          <li class="btn btn-secondary"><a href=""><div class="btn-img"><img src="img/top/btn-secondary-logo.png"
+                srcset="img/top/btn-secondary-logo.png 1x, img/top/btn-secondary-logo-2x.png 2x"
+                alt="AiR-Wi-Fi(エアワイファイ)" class="img--fit"></div><div>について</div><span>お問い合わせする</span></a></li>
+        </ul>
+    </section>
+    <section class="mv-bottom">
+      <ol class="caution01">
+        <li>一般的なご利用環境における十分なデーター容量を提供しておりますが、ネットワーク品質の維持と公平な電波利用の観点から、大容量の通信を行う利用者に対し通信の停止や速度低下措置を行わせていただきます。<br>
+          以下のようなご利用はなるべく控えていただけますようお願いいたします。<br>
+          長時間の動画コンテンツの視聴、長時間のオンラインゲームのご利用、大容量のダウンロード、長時間のネット通話、高解像度動画などの視聴、複数機器の常時接続などはお控えください。
+          上記などを守っていただけない場合ネットワーク品質の維持および公正な電波利用の観点から、該当のお客様に対し通信速度を概ね128Kbpsに制限する場合があります。
+          なお利用方法によって停止措置や速度制限がかかった場合の返金や交換などの対応は一切行っておりません。 また違法ダウンロードや犯罪行為などの不正利用の疑いがある場合、端末自体のご利用停止を行う場合があります。</li>
+        <li>海外利用時は別途料金となります。</li>
+        <li>平日12時までの申し込みで最短即日発送となり、発送混雑状況や契約内容に不備がある場合は変動することがございます。土日祝の場合は翌営業日に発送いたします。</li>
+        <li>U2sでお申し込みをされた時の月額料金になります。</li>
+        <li>U2sとG4は弊社でクリーニングいたしました新古品端末となります。</li>
+      </ol>
+    </section>
+    <section class="about">
+      <div class="sec-title">
+        <h2><img src="img/top/title-logo.png" srcset="img/top/title-logo.png 1x, img/top/title-logo-2x.png 2x"
+            alt="AiR-Wi-Fi(エアワイファイ)">とは？</h2>
+      </div>
+      <div class="cont">
+        <div class="about-list-cont">
+          <ul>
+            <li class="list-box list01">
+              <div class="list-box__img"><img src="img/top/about-list01.png" srcset="img/top/about-list01.png 1x, img/top/about-list01-2x.png 2x" alt="無制限"></div>
+              <div class="list-box__title italic f24">月額100GBまで無制限</div>
+              <div class="list-box__explane">3日で10GBなどの縛りが無い為、月間で最大100GBまで速度制限なしでストレスなく利用可能！※1</div>
+            </li>
+            <li class="list-box list02">
+              <div class="list-box__img"><img src="img/top/about-list02.png" srcset="img/top/about-list02.png 1x, img/top/about-list02-2x.png 2x" alt="契約期間無し"></div>
+              <div class="list-box__title italic f24">契約期間なしプラン</div>
+              <div class="list-box__explane">短期間レンタルが可能に！<br>
+                契約期間なしをオプションで追加いただきますといつでも解約金無料でご解約いただけます。</div>
+            </li>
+            <li class="list-box list03">
+              <div class="list-box__img"><img src="img/top/about-list03.png" srcset="img/top/about-list03.png 1x, img/top/about-list03-2x.png 2x" alt="トリプルキャリア"></div>
+              <div class="list-box__title italic f24">トリプルキャリア対応</div>
+              <div class="list-box__explane">大手キャリアの回線を利用幅広い地域でご利用いただけます。<br>
+                国内だけでなく海外でもご利用可能！※2</div>
+            </li>
+          </ul>
+        </div>
+        <ol class="caution01">
+          <li>毎月1日から末日の間、100GBまで無制限でご使用いただけます。ギガ数を超えた場合につきましては概ね128Kbpsで通信可能となっております。
+            通信制限の解除は毎月1日のおおよそ00時00分~09時00分です。<br>
+            また違法ダウンロードや犯罪行為などの不正利用の疑いがある場合、端末自体のご利用停止を行う場合があります。<br>
+            なお利用方法によって停止措置や速度制限がかかった場合の返金や交換などの対応は一切行っておりません。</li>
+          <li>海外利用時は別途料金となります。</li>
+        </ol>
+      </div>
+    </section>
+    <section class="topics">
+      <div class="sec-title">
+        <h2><img src="img/top/title-logo.png" srcset="img/top/title-logo.png 1x, img/top/title-logo-2x.png 2x"
+            alt="AiR-Wi-Fi(エアワイファイ)">トピック</h2>
+      </div>
+      <div class="topics-cont">
+        <ul>
+          <li>AiR-Wi-FiがWi-Fiの神の「AiR-WiFiの裏側を暴いてみた」に掲載されました</li>
+          <li>AiR-Wi-FiがWi-Fiの親の「AiR-WiFiの闇を暴露！！」に掲載されました</li>
+          <li>AiR-Wi-FiがWi-Fiの神の「AiR-WiFiの裏側を暴いてみた」に掲載されました</li>
+          <li>AiR-Wi-FiがWi-Fiの親の「AiR-WiFiの闇を暴露！！」に掲載されました</li>
+          <li>AiR-Wi-FiがWi-Fiの神の「AiR-WiFiの裏側を暴いてみた」に掲載されました</li>
+          <li>AiR-Wi-FiがWi-Fiの親の「AiR-WiFiの闇を暴露！！」に掲載されました</li>
+          <li>AiR-Wi-FiがWi-Fiの神の「AiR-WiFiの裏側を暴いてみた」に掲載されました</li>
+          <li>AiR-Wi-FiがWi-Fiの親の「AiR-WiFiの闇を暴露！！」に掲載されました</li>
+        </ul>
+      </div>
+    </section>
+    <section class="cta-primary">
+      <div class="cta-cont">
+        <div class="cta-product-img">
+          <img src="img/top/cta-product-img.png" srcset="img/top/cta-product-img.png 1x, img/top/cta-product-img-2x.png 2x" alt="AiR-Wi-Fi(エアワイファイ)製品" class="img--fit">
+        </div>
+        <div class="cta-primary-box">
+          <p class="pricetxt">Webからのお申し込みで<br><span class="month">月額</span><span class="price">2,980</span><span class="en">円〜</span></p>
+          <ul class="btn-box">
+            <li class="btn btn-primary"><a href="delivery.html"><div class="btn-img"><img src="img/top/btn-primary-logo.png"
+                  srcset="img/top/btn-primary-logo.png 1x, img/top/btn-primary-logo-2x.png 2x"
+                  alt="AiR-Wi-Fi(エアワイファイ)" class="img--fit"></div>を<span>お申し込みする</span></a></li>
+            <li class="btn btn-secondary"><a href=""><div class="btn-img"><img src="img/top/btn-secondary-logo.png"
+                  srcset="img/top/btn-secondary-logo.png 1x, img/top/btn-secondary-logo-2x.png 2x"
+                  alt="AiR-Wi-Fi(エアワイファイ)" class="img--fit"></div>について<span>お問い合わせする</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="flow" class="flow">
+      <div class="sec-title">
+        <h2><img src="img/top/title-logo.png" srcset="img/top/title-logo.png 1x, img/top/title-logo-2x.png 2x"
+            alt="AiR-Wi-Fi(エアワイファイ)"><span class="br__sp">利用までの流れ</span></h2>
+      </div>
+      <div class="flow-cont">
+        <ul>
+          <li class="step01"><span class="step">STEP 01</span><img src="img/top/step01-img.png" srcset="img/top/step01-img.png 1x, img/top/step01-img-2x.png 2x" alt="step01"><span class="step-explane">Webで申し込み、<span class="br__sp">最短即日発送</span></li>
+          <li class="step02"><span class="step">STEP 02</span><img src="img/top/step02-img.png" srcset="img/top/step02-img.png 1x, img/top/step02-img-2x.png 2x" alt="step02"><span class="step-explane">工事不要で受け取り</span></li>
+          <li class="step03"><span class="step">STEP 03</span><img src="img/top/step03-img.png" srcset="img/top/step03-img.png 1x, img/top/step03-img-2x.png 2x" alt="step03"><span class="step-explane">カンタン設定で利用開始</span></li>
+        </ul>
+      </div>
+    </section>
+    <section id="spec" class="spec">
+      <div class="sec-title">
+        <h2><img src="img/top/title-logo.png" srcset="img/top/title-logo.png 1x, img/top/title-logo-2x.png 2x"
+            alt="AiR-Wi-Fi(エアワイファイ)"><span class="br__sp">端末スペック</span></h2>
+      </div>
+      <div class="spec-cont">
+        <div id="tab">
+            <div class="tabmenu">
+              <div class="tabs">
+                <input type="radio" id="tab1" name="tab" value="1" v-model="isActive">
+                <label for="tab1">サクッとプラン</label>
+                <input type="radio" id="tab2" name="tab" value="2" v-model="isActive">
+                <label for="tab2">まるっとプラン</label>
+                <input type="radio" id="tab3" name="tab" value="3" v-model="isActive">
+                <label for="tab3">らくらくプラン</label>
+              </div>
+            </div>
+            <ul class="spec-lists">
+              <li v-if="isActive === '1'" class="spec-list spec-list01">
+                <div class="spec-contents">
+                  <div class="list-chatch-box">
+                    <div class="maximum"><span>最大100GBまで</span></div>
+                    <div class="spec-pricetxt">どんなに使っても変わらず<br><span class="month">月額</span><span class="price">2,980</span><span class="en">円〜</span></div>
+                    <div class="spec-explane">お得にご利用いただけます<br>月に100GBまで使い放題</div>
+                  </div>
+                  <div class="list-product-img"><img src="img/top/spec-list01-product.png" srcset="img/top/spec-list01-product.png 1x, img/top/spec-list01-product-2x.png 2x" alt="商品画像" class="img--fit"></div>
+                </div>
+                <div class="spec-detail-cont">
+                  <ul>
+                    <li class="spec-detail-list list01">
+                      <div class="spec-detail__listimg"><img src="img/top/spec-detail-list01.png" srcset="img/top/spec-detail-list01.png 1x, img/top/spec-detail-list01-2x.png 2x" alt="上り最大150.0mbps"></div>
+                      <div class="spec-detail__txt">上り最大<br><span class="num"><b>150</b><small>.0</small></span><span class="br__sp">mbps</span></div>
+                    </li>
+                    <li class="spec-detail-list list02">
+                      <div class="spec-detail__listimg"><img src="img/top/spec-detail-list02.png" srcset="img/top/spec-detail-list02.png 1x, img/top/spec-detail-list02-2x.png 2x" alt="下り最大50.0mbps"></div>
+                      <div class="spec-detail__txt">下り最大<br><span class="num"><b>50</b><small>.0</small></span><span class="br__sp">mbps</span></div>
+                    </li>
+                    <li class="spec-detail-list list03">
+                      <div class="spec-detail__listimg"><img src="img/top/spec-detail-list03.png" srcset="img/top/spec-detail-list03.png 1x, img/top/spec-detail-list03-2x.png 2x" alt="同時接続台数5台"></div>
+                      <div class="spec-detail__txt">同時接続台数<br class="none--pc"><span class="num"><b>5</b></span>台</div>
+                    </li>
+                    <li class="spec-detail-list list04">
+                      <div class="spec-detail__listimg"><img src="img/top/spec-detail-list04.png" srcset="img/top/spec-detail-list04.png 1x, img/top/spec-detail-list04-2x.png 2x" alt="海外どこでも利用可能"></div>
+                      <div class="spec-detail__txt">海外どこでも<br>利用可能</div>
+                    </li>
+                    <li class="spec-detail-list list05">
+                      <div class="spec-detail__listimg"><img src="img/top/spec-detail-list05.png" srcset="img/top/spec-detail-list05.png 1x, img/top/spec-detail-list05-2x.png 2x" alt="最大12時間使用可能"></div>
+                      <div class="spec-detail__txt">最大<span class="num"><b>12</b></span>時間<br>使用可能</div>
+                    </li>
+                    <li class="spec-detail-list list06">
+                      <div class="spec-detail__listimg"><img src="img/top/spec-detail-list06.png" srcset="img/top/spec-detail-list06.png 1x, img/top/spec-detail-list06-2x.png 2x" alt="端末の重さ"></div>
+                      <div class="spec-detail__txt">端末の重さ<br><span class="num"><b>149</b></span>g</div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="spec-caution">
+                  <ol class="caution02">
+                    <li>日本国内の4Gネットワークに対応しています。エリア内であっても建物や障害物、電波塔などの影響で通信ができない場合がございいますため予めご了承ください。</li>
+                    <li>海外利用時は別途料金となります。</li>
+                    <li>クラウドSIMタイプとなっておりますのでSIMカード無しでご使用いただけます。</li>
+                    <li>弊社でクリーニングをいたしました、リフレッシュ端末でご注文いただけます。</li>
+                  </ol>
+                </div>
+              </li>
+              <li v-else-if="isActive === '2'" class="spec-list spec-list02">
+                <div class="spec-contents">
+                  <div class="list-chatch-box">
+                    <div class="maximum"><span>最大100GBまで</span></div>
+                    <div class="spec-pricetxt">どんなに使っても変わらず<br><span class="month">月額</span><span class="price">3,580</span><span class="en">円〜</span></div>
+                    <div class="spec-explane">液晶画面+充電機能がついている<br>月に100GBまで使い放題</div>
+                  </div>
+                  <div class="list-product-img"><img src="img/top/spec-list02-product.png" srcset="img/top/spec-list02-product.png 1x, img/top/spec-list02-product-2x.png 2x" alt="商品画像" class="img--fit"></div>
+                </div>
+                <div class="spec-detail-cont">
+                  <ul>
+                    <li class="spec-detail-list list01">
+                      <div class="spec-detail__listimg"><img src="img/top/spec-detail-list01.png" srcset="img/top/spec-detail-list01.png 1x, img/top/spec-detail-list01-2x.png 2x" alt="上り最大150.0mbps"></div>
+                      <div class="spec-detail__txt">上り最大<br><span class="num"><b>150</b><small>.0</small></span><span class="br__sp">mbps</span></div>
+                    </li>
+                    <li class="spec-detail-list list02">
+                      <div class="spec-detail__listimg"><img src="img/top/spec-detail-list02.png" srcset="img/top/spec-detail-list02.png 1x, img/top/spec-detail-list02-2x.png 2x" alt="下り最大50.0mbps"></div>
+                      <div class="spec-detail__txt">下り最大<br><span class="num"><b>50</b><small>.0</small></span><span class="br__sp">mbps</span></div>
+                    </li>
+                    <li class="spec-detail-list list03">
+                      <div class="spec-detail__listimg"><img src="img/top/spec-detail-list03.png" srcset="img/top/spec-detail-list03.png 1x, img/top/spec-detail-list03-2x.png 2x" alt="同時接続台数5台"></div>
+                      <div class="spec-detail__txt">同時接続台数<br class="none--pc"><span class="num"><b>5</b></span>台</div>
+                    </li>
+                    <li class="spec-detail-list list04">
+                      <div class="spec-detail__listimg"><img src="img/top/spec-detail-list04.png" srcset="img/top/spec-detail-list04.png 1x, img/top/spec-detail-list04-2x.png 2x" alt="海外どこでも利用可能"></div>
+                      <div class="spec-detail__txt">海外どこでも<br>利用可能</div>
+                    </li>
+                    <li class="spec-detail-list list05">
+                      <div class="spec-detail__listimg"><img src="img/top/spec-detail-list05.png" srcset="img/top/spec-detail-list05.png 1x, img/top/spec-detail-list05-2x.png 2x" alt="最大12時間使用可能"></div>
+                      <div class="spec-detail__txt">最大<span class="num"><b>12</b></span>時間<br>使用可能</div>
+                    </li>
+                    <li class="spec-detail-list list06">
+                      <div class="spec-detail__listimg"><img src="img/top/spec-detail-list06.png" srcset="img/top/spec-detail-list06.png 1x, img/top/spec-detail-list06-2x.png 2x" alt="端末の重さ"></div>
+                      <div class="spec-detail__txt">端末の重さ<br><span class="num"><b>188</b></span>g</div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="spec-caution">
+                  <ol class="caution02">
+                    <li>日本国内の4Gネットワークに対応しています。エリア内であっても建物や障害物、電波塔などの影響で通信ができない場合がございいますため予めご了承ください。</li>
+                    <li>海外利用時は別途料金となります。</li>
+                    <li>クラウドSIMタイプとなっておりますのでSIMカード無しでご使用いただけます。</li>
+                    <li>弊社でクリーニングをいたしました、リフレッシュ端末でご注文いただけます。</li>
+                  </ol>
+                </div>
+              </li>
+              <li v-else-if="isActive === '3'" class="spec-list spec-list03">
+                <div class="spec-contents">
+                  <div class="list-chatch-box">
+                    <div class="maximum"><span>最大100GBまで</span></div>
+                    <div class="spec-pricetxt">どんなに使っても変わらず<br><span class="month">月額</span><span class="price">3,380</span><span class="en">円〜</span></div>
+                    <div class="spec-explane">軽くて持ち運びやすい最新モデル<br>月に100GBまで使い放題</div>
+                  </div>
+                  <div class="list-product-img"><img src="img/top/spec-list03-product.png" srcset="img/top/spec-list03-product.png 1x, img/top/spec-list03-product-2x.png 2x" alt="商品画像" class="img--fit"></div>
+                </div>
+                <div class="spec-detail-cont">
+                  <ul>
+                    <li class="spec-detail-list list01">
+                      <div class="spec-detail__listimg"><img src="img/top/spec-detail-list01.png" srcset="img/top/spec-detail-list01.png 1x, img/top/spec-detail-list01-2x.png 2x" alt="上り最大150.0mbps"></div>
+                      <div class="spec-detail__txt">上り最大<br><span class="num"><b>150</b><small>.0</small></span><span class="br__sp">mbps</span></div>
+                    </li>
+                    <li class="spec-detail-list list02">
+                      <div class="spec-detail__listimg"><img src="img/top/spec-detail-list02.png" srcset="img/top/spec-detail-list02.png 1x, img/top/spec-detail-list02-2x.png 2x" alt="下り最大50.0mbps"></div>
+                      <div class="spec-detail__txt">下り最大<br><span class="num"><b>50</b><small>.0</small></span><span class="br__sp">mbps</span></div>
+                    </li>
+                    <li class="spec-detail-list list03">
+                      <div class="spec-detail__listimg"><img src="img/top/spec-detail-list03.png" srcset="img/top/spec-detail-list03.png 1x, img/top/spec-detail-list03-2x.png 2x" alt="同時接続台数5台"></div>
+                      <div class="spec-detail__txt">同時接続台数<br class="none-pc"><span class="num"><b>10</b></span>台</div>
+                    </li>
+                    <li class="spec-detail-list list04">
+                      <div class="spec-detail__listimg"><img src="img/top/spec-detail-list04.png" srcset="img/top/spec-detail-list04.png 1x, img/top/spec-detail-list04-2x.png 2x" alt="海外どこでも利用可能"></div>
+                      <div class="spec-detail__txt">海外どこでも<br>利用可能</div>
+                    </li>
+                    <li class="spec-detail-list list05">
+                      <div class="spec-detail__listimg"><img src="img/top/spec-detail-list05.png" srcset="img/top/spec-detail-list05.png 1x, img/top/spec-detail-list05-2x.png 2x" alt="最大12時間使用可能"></div>
+                      <div class="spec-detail__txt">最大<span class="num"><b>10</b></span>時間<br>使用可能</div>
+                    </li>
+                    <li class="spec-detail-list list06">
+                      <div class="spec-detail__listimg"><img src="img/top/spec-detail-list06.png" srcset="img/top/spec-detail-list06.png 1x, img/top/spec-detail-list06-2x.png 2x" alt="端末の重さ"></div>
+                      <div class="spec-detail__txt">端末の重さ<br><span class="num"><b>125</b></span>g</div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="spec-caution">
+                  <ol class="caution02">
+                    <li>日本国内の4Gネットワークに対応しています。エリア内であっても建物や障害物、電波塔などの影響で通信ができない場合がございいますため予めご了承ください。</li>
+                    <li>海外利用時は別途料金となります。</li>
+                    <li>クラウドSIMタイプとなっておりますのでSIMカード無しでご使用いただけます。</li>
+                    <li>弊社でクリーニングをいたしました、リフレッシュ端末でご注文いただけます。</li>
+                  </ol>
+                </div>
+              </li>
+            </ul>
+        </div>
+      </div>
+    </section>
+    <section class="cta-secondary">
+     <div class="maximum"><span>最大100GBまで</span></div>
+     <div class="spec-pricetxt">どんなに使っても変わらず<br><span class="month">月額</span><span class="price">2,980</span><span class="en">円〜</span></div>
+     <ul class="btn-box">
+      <li class="btn btn-primary"><a href="delivery.html"><div class="btn-img"><img src="img/top/btn-primary-logo.png"
+            srcset="img/top/btn-primary-logo.png 1x, img/top/btn-primary-logo-2x.png 2x"
+            alt="AiR-Wi-Fi(エアワイファイ)" class="img--fit"></div>を<span>お申し込みする</span></a></li>
+      <li class="btn btn-secondary"><a href=""><div class="btn-img"><img src="img/top/btn-secondary-logo.png"
+            srcset="img/top/btn-secondary-logo.png 1x, img/top/btn-secondary-logo-2x.png 2x"
+            alt="AiR-Wi-Fi(エアワイファイ)" class="img--fit"></div>について<span>お問い合わせする</span></a></li>
+     </ul>
+    </section>
+    <section class="attention">
+      <div class="attention-cont contractperiod">
+        <div class="attention-title"><h3>契約期間について</h3></div>
+        <div class="attention-cont">
+          <p><span class="important">契約月を1ヶ月目とし、契約更新月は25ヶ月目となります。</span><br>
+            24ヶ月以内の契約の場合、 端末をご返却いただきます。それ以降は、返却不要です。</p>
+            <div class="btnClick">注意事項</div>
+            <div class="inner">
+              <ol class="caution02">
+                <li>ご返却いただけない場合、端末違約金が契約月残数×1,600円（税抜）が発生します。</li>
+                <li>契約期間内のご返却時に箱・説明書・ケーブルなどの付属品に欠品がある場合、過度の汚損、破損がある場合追加費用として20,000円(税抜)が発生します。</li>
+                <li>解約締め切り日は毎月20日となります。1〜20日の間に申請いただき、返却期限日をもって解約となります。</li>
+                <li>21日〜月末は解約受付した翌月末をもっての解約となり、月額料金は翌月まで発生いたしますため、予めご了承ください。</li>
+                <li>返却期限日は解約月の25日までの返却となります。返却期限日を過ぎた場合は超過分の月額料金をいただきます。（例：3月20日までの解約申請の場合→3月末が解約月となり3月25日が返却期限日）</li>
+                <li>返却期限日は宅配業者様の受付日をもってとなります。</li>
+                <li>解約月の翌月にご利用がないことが条件となります。(ご利用が弊社にて確認できた場合、ご利用月の月額料金をいただきます。)</li>
+              </ol>
+            </div>
+        </div>
+      </div>
+      <div class="attention-cont cancellationfee">
+        <div class="attention-title"><h3>解体費用について</h3></div>
+        <div class="attention-cont">
+          <table>
+            <tbody>
+              <tr><th>1年未満</th><td>10,000円 税抜</td></tr>
+              <tr><th>1〜2年未満</th><td>7,000円 税抜</td></tr>
+              <tr><th>契約更新月以降</th><td>0円</td></tr>
+            </tbody>
+          </table>
+          <div class="salestxt">
+            <div class="circle">契約期間なし<br>オプション<br>加入時</div>
+            <div class="txt">いつでも解約違約金<br class="none--pc"><span>0</span>円で<br class="br--pc">解約可能！</div>
+          </div>
+          <ol class="caution02">
+            <li><span>2ヶ月目以降</span></li>
+            <li>契約期間なしオプション加入時での解約は解約申請頂いた翌月末の解約となります。(解約時期は実質2ヶ月以降)</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+    <section id="option" class="option">
+      <div class="sec-title">
+        <h2><img src="img/top/title-logo.png" srcset="img/top/title-logo.png 1x, img/top/title-logo-2x.png 2x"
+            alt="AiR-Wi-Fi(エアワイファイ)"><span class="br__sp">2つのオプション</span></h2>
+      </div>
+      <div class="option-box">
+        <div class="option-title"><h3>契約期間なしオプション</h3></div>
+        <div class="option-cont-inner">
+          <div class="option-inner-box">
+            <div class="option-catch">契約期間のしばり<span>なし</span>！<br>いつでも<span>解約金0円</span>に！</div>
+            <div class="option-price">月額<span class="price">600</span><span class="en">円〜</span></div>
+          </div>
+          <div class="btnClick">注意事項</div>
+          <div class="inner">
+            <ol class="caution03">
+              <li>①解約申請を頂いた翌月末の解約となり、返却期限までに本体および説明書、ケーブルなど弊社提供備品すべてのご返却頂く必要がございます。</li>
+              <li>②箱・説明書・ケーブル欠品がある場合、過度の汚損、破損がある場合追加費用として20,000円(税抜)が発生します。</li>
+              <li>③返却期限は解約月の翌月14日までの返却となります。期限を過ぎた場合は違約金9,000円(税抜)が発生致します。（例：6月中での解約申請の場合→7月が解約月となり8/14までに返却）※宅配業者様の消印日をもって返却日とさせていただきます。</li>
+              <li>④返却処理手数料として1,000円（税抜）発生いたします。</li>
+              <li>⑤また送料負担については、申込者側の負担となります。</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="option-box">
+        <div class="option-title"><h3>安心オプション</h3></div>
+        <div class="option-cont-inner">
+          <div class="option-inner-box">
+            <div class="option-catch">水没や落下などの故障に<span>安心</span>！<br>安心オプションを利用し<span>無償</span>交換！</div>
+            <div class="option-price">月額<span class="price">500</span><span class="en">円〜</span></div>
+          </div>
+          <div class="btnClick">注意事項</div>
+          <div class="inner">
+            <ol class="caution03">
+              <li>①水没・全損で「弊社検品済端末」と交換致します。</li>
+              <li>②補償の対象期間はオプションの加入期間内に限ります</li>
+              <li>③1度補償をうけたあと、12か月以内の再度補償を受けたい場合は、1台あたり9,000円(税抜)の費用が発生いたします。</li>
+              <li>④端末契約時でのみの加入となります</li>
+              <li>⑤途中加入及び途中解約はできません</li>
+              <li>⑥初期端末不備の場合は、無償交換が可能です。</li>
+              <li>⑦弊社への返送時送料はお客様負担となります</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="cta-secondary-02-wrap">
+    <section class="cta-secondary ">
+     <div class="maximum"><span>最大100GBまで</span></div>
+     <div class="spec-pricetxt">どんなに使っても変わらず<br><span class="month">月額</span><span class="price">2,980</span><span class="en">円〜</span></div>
+     <ul class="btn-box">
+      <li class="btn btn-primary"><a href="delivery.html"><div class="btn-img"><img src="img/top/btn-primary-logo.png"
+            srcset="img/top/btn-primary-logo.png 1x, img/top/btn-primary-logo-2x.png 2x"
+            alt="AiR-Wi-Fi(エアワイファイ)" class="img--fit"></div>を<span>お申し込みする</span></a></li>
+      <li class="btn btn-secondary"><a href=""><div class="btn-img"><img src="img/top/btn-secondary-logo.png"
+            srcset="img/top/btn-secondary-logo.png 1x, img/top/btn-secondary-logo-2x.png 2x"
+            alt="AiR-Wi-Fi(エアワイファイ)" class="img--fit"></div>について<span>お問い合わせする</span></a></li>
+     </ul>
+    </section>
+    </div>
+    <div class="oversea-point-wrap">
+    <section id="oversea" class="oversea">
+      <div class="sec-title">
+        <h2><img src="img/top/title-logo.png" srcset="img/top/title-logo.png 1x, img/top/title-logo-2x.png 2x"
+            alt="AiR-Wi-Fi(エアワイファイ)"><span class="br__sp">海外利用について</span></h2>
+      </div>
+      <div class="oversea-cont">
+        <div class="area-cont">
+          <div class="area-box area-box01">
+            <div class="area-title">AREA 01</div>
+            <div class="coutory">
+              アジア/ヨーロッパ<br>アメリカ/オーストラリア
+            </div>
+            <div class="area-price">
+              <div class="gb">1GB/1日</div>
+              <div class="price-box"><span class="price">1,200</span><span class="en">円〜</span></div>
+            </div>
+          </div>
+          <div class="area-box">
+            <div class="area-title">AREA 02</div>
+            <div class="coutory">
+              中東/アフリカ/南米
+            </div>
+            <div class="area-price">
+              <div class="gb">1GB/1日</div>
+              <div class="price-box"><span class="price">1,600</span><span class="en">円〜</span></div>
+            </div>
+          </div>
+        </div>
+          <p class="link-correspondence"><a href="correspondence.html" target="_blank">対応国詳細の一覧はこちら</a></p>
+        </div>
+    </section>
+    <section id="point" class="point">
+      <div class="point-cont">
+        <ul>
+          <li class="point-list point01">SIMの差し替え<span>不要</span>！</li>
+          <li class="point-list point02"><span>135カ国</span>で利用可能！</li>
+          <li class="point-list point03"><span>電波を入れるだけ</span>で利用可能！</li>
+        </ul>
+        <ol class="caution02">
+          <li>1GB超過後の通信速度128Kbpsにて無制限でご利用頂けます。LTEでの高速通信は1日1GBまでとなりますので予めご了承ください。</li>
+          <li>1日の容量リセット時間は日本時間の0:00となります（例：1day=当日0:00～23:59）1GB未満の利用日であっても翌日への容量繰越はできません。</li>
+        </ol>
+    </div>
+    </section>
+    </div>
+    <section id="faq" class="faq">
+      <div class="sec-title">
+        <h2><img src="img/top/title-logo.png" srcset="img/top/title-logo.png 1x, img/top/title-logo-2x.png 2x"
+            alt="AiR-Wi-Fi(エアワイファイ)"><span class="br__sp">よくあるご質問</span></h2>
+      </div>
+      <div class="faq-cont">
+        <ul>
+          <li>
+            <div class="question btnClick">利用開始月の月額料金は日割りになりますか？</div>
+            <div class="answer">利用開始月の月額料金は日割りを行っておりませんが、<br>お申込み時に次月配送予約でご注文いただけましたら、お申し込み日の翌月に端末を発送させていただきます。<br>
+              またお申し込み後に「次月配送予約へのご変更」はいたしかねますためご了承くださいませ。
+              </div>
+          </li>
+          <li>
+            <div class="question btnClick">次月配送予約とは？</div>
+            <div class="answer">お申し込み日の翌月の1日より端末がご利用いただけるオプションとなっております。
+              ※初期事務手数料の3.000円(税抜)は申し込み日に先立っていただきます。
+              ※交通状況やお届け先・在庫状況によって端末到着日が前後する場合がございます。              
+              </div>
+          </li>
+          <li>
+            <div class="question btnClick">送料はかかりますか？</div>
+            <div class="answer">初回ご契約時の送料は弊社負担になりますが、
+              お客様が解約や故障交換をされる場合、端末返却の送料はお客様負担になります。
+              </div>
+          </li>
+          <li>
+            <div class="question btnClick">配送先や配送日時の指定はできますか？
+            </div>
+            <div class="answer">配送時間の指定は承っておりません。
+              また、端末到着日は発送から1日～3日ほどで届きますが、
+              交通状況やお届け先・在庫状況によって端末到着日が前後する場合がございます。
+              </div>
+          </li>
+          <li>
+            <div class="question btnClick">申し込み完了後、端末はいつ頃届きますでしょうか？</div>
+            <div class="answer">平日正午までの申し込みで最短即日発送となり、交通状況やお届け先・在庫状況によって端末到着日が前後する場合がございます。土日祝の場合は翌営業日に発送いたします。
+              お荷物の配送状況につきましては配送業者様までお問い合わせください。
+              </div>
+          </li>
+          <li>
+            <div class="question btnClick">商品到着後、エリア外だったり電波が弱かった場合は交換できますか？
+            </div>
+            <div class="answer">国内通信キャリアが繋がるエリアであれば利用は可能としておりますが、 もし圏外表示の場合はお問い合わせフォームよりご連絡ください。 端末不調の可能性があるため、1年以内であれば無償交換ができます。 なおお客様の破損や端末に損傷があるトラブルや水没は 安心オプション未加入の場合、有償となります。
+              </div>
+          </li>
+          <li>
+            <div class="question btnClick">端末の故障交換は安心オプション加入なしでもできますか？</div>
+            <div class="answer">お客様が故意による端末不調ではないと判断された場合、
+              申し込み日より1年間は無償交換が可能となっております。
+              万が一の場合に備えて「安心オプション/500円(税抜)」への加入をおすすめしております。
+              安心オプションの詳細はこちらよりご確認いただけます。
+              </div>
+          </li>
+          <li>
+            <div class="question btnClick">端末を紛失した場合</div>
+            <div class="answer">端末を紛失した場合、端末再発行費用として20,000円(税抜)が発生致します。
+              ※分割支払いは承っておりません。              
+              </div>
+          </li>
+          <li>
+            <div class="question btnClick">お支払い方法について</div>
+            <div class="answer">クレジットカードのみのご対応となります。 VISA/JCB/MasterCard/AMERICAN EXPRESS/DinersClubに対応しております。デビットカード、プリペイドカード、海外契約のクレジットカードには対応しておりません。
+              </div>
+          </li>
+          <li>
+            <div class="question btnClick">クレジットカードを変更したい場合は？</div>
+            <div class="answer">お問い合わせフォームよりご連絡ください。 弊社より変更届をお送りさせていただきましてご対応させていただきます。
+              </div>
+          </li>
+          <li>
+            <div class="question btnClick">領収書の発行はできますか？</div>
+            <div class="answer">領収書はクレジットカードのみのお支払いになるため、カード会社様のご利用代金明細書が正式な領収書になります。 弊社から領収書の発行はいたしませんので、ご了承くださいませ。
+              </div>
+          </li>
+          <li>
+            <div class="question btnClick">未成年のお申込みはできますか？</div>
+            <div class="answer">18歳未満の名義でのご契約はいただけません。成人されているご家族様名義でのご契約をお願い致します。
+
+              </div>
+          </li>
+          <li>
+            <div class="question btnClick">ご契約の解約方法について            </div>
+            <div class="answer">お問い合わせフォームよりご連絡いただき、 折返しのメールで解約手続きが簡単にできます。解約申請受付後、弊社に端末を返却いただけましたら解約の処理をさせていただきます。
+              </div>
+          </li>
+          <li>
+            <div class="question btnClick">通信速度制限はありますか？</div>
+            <div class="answer">最大容量は100GBとなります。<br>一般的なご利用環境における十分なデーター容量を提供しておりますが、ネットワーク品質の維持と公平な電波利用の観点から、大容量の通信を行う利用者に対し通信の停止や速度低下措置を行わせていただきます。<br>
+              以下のようなご利用はなるべく控えていただけますようお願いいたします。<br> 長時間の動画コンテンツの視聴、長時間のオンラインゲームのご利用、大容量のダウンロード、長時間のネット通話、高解像度動画などの視聴、複数機器の常時接続などはお控えください。<br>
+              上記などを守っていただけない場合ネットワーク品質の維持および公正な電波利用の観点から、該当のお客様に対し通信速度を概ね128Kbpsに制限する場合があります。<br>
+              なお利用方法によって停止措置や速度制限がかかった場合の返金や交換などの対応は一切行っておりません。<br>
+              また違法ダウンロードや犯罪行為などの不正利用の疑いがある場合、端末自体のご利用停止を行う場合があります。<br>
+              またお申し込み後に「次月配送予約へのご変更」はいたしかねますためご了承くださいませ。
+              </div>
+          </li>
+          <li>
+            <div class="question btnClick">申込後にキャンセルしたいのですが可能でしょうか？</div>
+            <div class="answer">申し込み後のキャンセルは出来かねます
+              </div>
+          </li>
+          <li>
+            <div class="question btnClick">付属品をなくしたのですが、解約は可能でしょうか？</div>
+            <div class="answer">以下の料金が付属品1つにつき料金が発生いたします。
+              また端末を紛失した場合は、別途料金が発生いたします。<br>
+              ＝＝＝＝＝＝<br>
+              ・3,000円：SIMピン、USBケーブル×1本<br>
+              ・5,000円：説明書<br>
+              ・10,000円：箱<br>
+              ・20,000円：付属品が全てないお客様<br>
+              ＝＝＝＝＝＝
+              </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="cta-secondary">
+     <div class="maximum"><span>最大100GBまで</span></div>
+     <div class="spec-pricetxt">どんなに使っても変わらず<br><span class="month">月額</span><span class="price">2,980</span><span class="en">円〜</span></div>
+     <ul class="btn-box">
+      <li class="btn btn-primary"><a href="delivery.html"><div class="btn-img"><img src="img/top/btn-primary-logo.png"
+            srcset="img/top/btn-primary-logo.png 1x, img/top/btn-primary-logo-2x.png 2x"
+            alt="AiR-Wi-Fi(エアワイファイ)" class="img--fit"></div>を<span>お申し込みする</span></a></li>
+      <li class="btn btn-secondary"><a href=""><div class="btn-img"><img src="img/top/btn-secondary-logo.png"
+            srcset="img/top/btn-secondary-logo.png 1x, img/top/btn-secondary-logo-2x.png 2x"
+            alt="AiR-Wi-Fi(エアワイファイ)" class="img--fit"></div>について<span>お問い合わせする</span></a></li>
+     </ul>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="">お問い合わせ</a></li>
+        <li><a href="">利用規約</a></li>
+        <li><a href="">プライバシーポリシー</a></li>
+        <li><a href="company.html">会社概要・特定商取引法に基づく表記</a></li>
+      </ul>
+    </div>
+    <div class="footer-logo">
+      <a href="index.html"><img src="img/common/footer-logo.png" srcset="img/common/footer-logo.png 1x, img/common/footer-logo-2x.png 2x" alt="AiR-Wi-Fi(エアワイファイ)"></a>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+  <script src="js/lib/ofi.js"></script>
+  <script src="js/common.js"></script>
+  <script>
+    objectFitImages();
+  </script>
+</body>
+
+</html>

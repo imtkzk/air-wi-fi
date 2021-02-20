@@ -1,0 +1,63 @@
+// main: ../style.scss
+
+/*  company CSS
+------------------------------------------------------------------------------*/
+.company {
+  margin-top: 180px;
+  padding: 5em 0;
+  width: 96%;
+  max-width: 1000px;
+  margin: 2em auto;
+  h2 {
+    font-weight: 600;
+    font-size: 24px;
+    margin: 2em 0;
+  }
+  table {
+    border-collapse: separate;
+    border-spacing: 0px 10px;
+    tbody {
+      tr {
+        padding-top: 10px;
+        th {
+          text-align: left;
+          background-color: $color-red;
+          color: #fff;
+          font-weight: 600;
+          padding: 1em 2em;
+          white-space: nowrap;
+          display: block;
+        }
+        td {
+          display: block;
+          padding: 1em 2em;
+          a {
+            text-decoration: underline;
+            color: #473889;
+            font-weight: 600;
+            margin: 0 0.1em;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: $breakpoint1) {
+  .company {
+    h2 {
+      font-size: 36px;
+    }
+    table {
+      tbody {
+        tr {
+          th {
+            display: revert;
+          }
+          td {
+            display: revert;
+          }
+        }
+      }
+    }
+  }
+}

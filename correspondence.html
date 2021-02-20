@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=yes"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <title>AiR-Wi-Fi</title>
+    <meta name="description" content="" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+
+  <body id="top">
+    <div id="hamburger">
+      <div class="hamburger_btn" @click="ActiveBtn=!ActiveBtn">
+        <span
+          class="line line_01"
+          v-bind:class="{'btn_line01':ActiveBtn}"
+        ></span>
+        <span
+          class="line line_02"
+          v-bind:class="{'btn_line02':ActiveBtn}"
+        ></span>
+        <span
+          class="line line_03"
+          v-bind:class="{'btn_line03':ActiveBtn}"
+        ></span>
+      </div>
+      <transition name="menu">
+        <div class="menu" v-show="ActiveBtn">
+          <ul class="nav">
+            <li><a href="index.html">TOP</a></li>
+            <li><a href="index.html#point">ポイント</a></li>
+            <li><a href="index.html#flow">ご利用の流れ</a></li>
+            <li><a href="index.html#price">各種料金</a></li>
+            <li><a href="index.html#option">オプション</a></li>
+            <li><a href="index.html#overseas">海外利用</a></li>
+            <li><a href="index.html#faq">Q＆A</a></li>
+            <li class="nav-btn"><a href="delivery.html">お申し込み</a></li>
+            </li>
+          </ul>
+        </div>
+      </transition>
+    </div>
+    <header id="header" class="header">
+      <div class="header-logo">
+        <h1>
+          <a href="index.html"
+            ><img
+              src="img/common/header-logo.png"
+              srcset="
+                img/common/header-logo.png    1x,
+                img/common/header-logo-2x.png 2x
+              "
+              alt="AiR-Wi-Fi(エアワイファイ)"
+          /></a>
+        </h1>
+      </div>
+      <ul class="nav">
+        <li><a href="index.html">TOP</a></li>
+        <li><a href="index.html#point">ポイント</a></li>
+        <li><a href="index.html#flow">ご利用の流れ</a></li>
+        <li><a href="index.html#price">各種料金</a></li>
+        <li><a href="index.html#option">オプション</a></li>
+        <li><a href="index.html#overseas">海外利用</a></li>
+        <li><a href="index.html#faq">Q＆A</a></li>
+        <li class="nav-btn"><a href="delivery.html">お申し込み</a></li>
+      </ul>
+    </header>
+    <main class="main">
+      <section class="oversea-list">
+        <div class="list">
+          <h2><span>AREA1</span>1200円 1GB/day</h2>
+          <h3>アジア 21地域</h3>
+          <ul>
+            <li>VietNam ベトナム</li>
+            <li>Thailand タイ</li>
+            <li>Taiwan 台湾</li>
+            <li>Sri Lanka スリランカ</li>
+            <li>Singapore シンガポール</li>
+            <li>Philippines フィリピン</li>
+            <li>Nepal ネパール</li>
+            <li>Mongolia モンゴル</li>
+            <li>Maynmar ミャンマー</li>
+            <li>Macao マカオ</li>
+            <li>Laos ラオス</li>
+            <li>Korea 大韓民国</li>
+            <li>Japan 日本</li>
+            <li>Indonesia インドネシア</li>
+            <li>India インド</li>
+            <li>Hong Kong 香港</li>
+            <li>China 中華人民共和国</li>
+            <li>Cambodia カンボジア</li>
+            <li>Brunei ブルネイ</li>
+            <li>Bangladesh バングラデシュ</li>
+          </ul>
+        </div>
+        <div class="list">
+          <h3>オセアニア 5地域</h3>
+          <ul>
+            <li>Saipan 北マリアナ諸島</li>
+            <li>New Zealand ニュージーランド</li>
+            <li>Guam グアム</li>
+            <li>Fiji フィジー</li>
+            <li>Australia オーストラリア</li>
+          </ul>
+        </div>
+        <div class="list">
+          <h3>ヨーロッパ 48地域</h3>
+          <ul>
+            <li>Vatican バチカン</li>
+            <li>United Kingdom イギリス</li>
+            <li>Ukraine ウクライナ</li>
+            <li>Turkey トルコ</li>
+            <li>Switzerland スイス</li>
+            <li>Sweden スウェーデン</li>
+            <li>Spain スペイン</li>
+            <li>Slovenia スロベニア</li>
+            <li>Slovakia スロバキア</li>
+            <li>Serbia セルビア</li>
+            <li>San Marino サンマリノ</li>
+            <li>Russia ロシア連邦</li>
+            <li>Romania ルーマニア</li>
+            <li>Portugal ポルトガル</li>
+            <li>Poland ポーランド</li>
+            <li>Norway ノルウェー</li>
+            <li>Netherlands オランダ</li>
+            <li>Montenegro モンテネグロ</li>
+            <li>Monaco モナコ</li>
+            <li>Malta マルタ</li>
+            <li>Macedonia マケドニア共和国</li>
+            <li>Luxembourg ルクセンブルク</li>
+            <li>Lithuania リトアニア</li>
+            <li>Liechtenstein リヒテンシュタイン</li>
+            <li>Latvia ラトビア</li>
+            <li>Jersey ジャージー</li>
+            <li>Italy イタリア</li>
+            <li>Isle of man マン島</li>
+            <li>Ireland アイルランド</li>
+            <li>Iceland アイスランド</li>
+            <li>Hungary ハンガリー</li>
+            <li>Guernsey ガーンジー</li>
+            <li>Greece ギリシャ</li>
+            <li>Gibraltar ジブラルタル</li>
+            <li>Germany ドイツ</li>
+            <li>France フランス</li>
+            <li>Finland フィンランド</li>
+            <li>Estonia エストニア</li>
+            <li>Denmark デンマーク</li>
+            <li>Czech Republic チェコ共和国</li>
+            <li>Cyprus キプロス</li>
+            <li>Croatia クロアチア</li>
+            <li>Bulgaria ブルガリア</li>
+            <li>Bosnia and Herzegovina ボスニアヘルツェゴビナ</li>
+            <li>Belgium ベルギー</li>
+            <li>Austria オーストリア</li>
+            <li>Albania アルバニア</li>
+            <li>Åland Islands アランド島</li>
+          </ul>
+        </div>
+        <div class="list">
+          <h3>北アメリカ 19地域</h3>
+          <ul>
+            <li>United States アメリカ合衆国</li>
+            <li>Turks and Caicos Islands タークス・カイコス諸島</li>
+            <li>Trinidad and Tobago トリニダード・トバゴ</li>
+            <li>
+              Saint Vincent and the Grenadines セントビンセント・グレナディーン
+            </li>
+            <li>Saint Martin サン・マルタン</li>
+            <li>Puerto Rico プエルトリコ</li>
+            <li>Mexico メキシコ</li>
+            <li>Martinique マルティニーク</li>
+            <li>Jamaica ジャマイカ</li>
+            <li>Haiti ハイチ</li>
+            <li>Guadeloupe グアドループ</li>
+            <li>Grenada グレナダ</li>
+            <li>Curacao キュラソー島</li>
+            <li>Cayman Islands ケイマン諸島</li>
+            <li>Canada カナダ</li>
+            <li>British Virgin Islands イギリス領ヴァージン諸島</li>
+            <li>Aruba アルバ</li>
+            <li>Antigua and Barbuda アンティグア・バーブーダ</li>
+            <li>Anguilla アンギラ</li>
+          </ul>
+        </div>
+        <div class="list">
+          <h2><span>AREA2</span>1600円 1GB/day</h2>
+          <h3>アフリカ 14地域</h3>
+          <ul>
+            <li>Algeria アルジェリア</li>
+            <li>Egypt エジプト</li>
+            <li>Ghana ガーナ</li>
+            <li>Kenya ケニア</li>
+            <li>Morocco モロッコ</li>
+            <li>Mauritius モーリシャス</li>
+            <li>Nigeria ナイジェリア</li>
+            <li>Tunisia チュニジア</li>
+            <li>Tanzania タンザニア</li>
+            <li>South Africa 南アフリカ共和国</li>
+            <li>Zambia ザンビア</li>
+            <li>Angola アンゴラ</li>
+            <li>Madagascar マダガスカル</li>
+            <li>Western Sahara(Monaco) 西サハラ</li>
+          </ul>
+        </div>
+        <div class="list">
+          <h3>南アメリカ 17地域</h3>
+          <ul>
+            <li>Argentina アルゼンチン</li>
+            <li>Brazil ブラジル</li>
+            <li>Chile チリ</li>
+            <li>Colombia コロンビア</li>
+            <li>Panama パナマ</li>
+            <li>Peru ペルー</li>
+            <li>Uruguay ウルグアイ</li>
+            <li>Venezuela ベネズエラ</li>
+            <li>Bolivia ボリビア</li>
+            <li>Ecuador エクアドル</li>
+            <li>Costa Rica コスタリカ</li>
+            <li>The Dominican Republic ドミニカ共和国</li>
+            <li>Guatemala グアテマラ</li>
+            <li>Nicaragua ニカラグア</li>
+            <li>El Salvador エルサルバドル</li>
+            <li>Guyana ガイアナ</li>
+            <li>Suriname スリナム</li>
+          </ul>
+        </div>
+        <div class="list">
+          <h3>中東 11地域</h3>
+          <ul>
+            <li>UAE アラブ首長国連邦</li>
+            <li>Bahrain バーレーン</li>
+            <li>Israel イスラエル</li>
+            <li>Jordan ヨルダン</li>
+            <li>Kazakhstan カザフスタン</li>
+            <li>Pakistan パキスタン</li>
+            <li>Qatar カタール</li>
+            <li>Saudi Arabia サウジアラビア</li>
+            <li>Kuwait クウェート</li>
+            <li>Tajikistan タジキスタン</li>
+            <li>Oman オマーン</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-nav">
+        <ul>
+          <li><a href="">お問い合わせ</a></li>
+          <li><a href="">利用規約</a></li>
+          <li><a href="">プライバシーポリシー</a></li>
+          <li><a href="">会社概要・特定商取引法に基づく表記</a></li>
+        </ul>
+      </div>
+      <div class="footer-logo">
+        <a href="index.html"><img src="img/common/footer-logo.png" srcset="img/common/footer-logo.png 1x, img/common/footer-logo-2x.png 2x" alt="AiR-Wi-Fi(エアワイファイ)"></a>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <script src="js/lib/ofi.js"></script>
+    <script src="js/common.js"></script>
+    <script>
+      objectFitImages()
+    </script>
+  </body>
+</html>

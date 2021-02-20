@@ -1,0 +1,40 @@
+// main: ../style.scss;
+
+$color-base: #fff;
+$color-mainbg: #f8f8f8;
+$color-main: #000;
+$color-text: #000;
+$color-blue: #007dbd;
+$color-green: #25a2aa;
+$color-yellow: #f3e027;
+$color-red: #e41f1a;
+$font1: "Noto Sans JP", sans-serif;
+$font2: "Hemi", sans-serif;
+
+$breakpoint1: 769px;
+$breakpoint1-max: 768px;
+$breakpoint2: 1441px;
+$breakpoint2-max: 1440px;
+
+@function vw-sp($size, $viewport: 768) {
+  $rate: 100 / $viewport;
+  @return $rate * $size * 1vw;
+}
+
+@function vw-pc($size, $viewport: 1440) {
+  $rate: 100 / $viewport;
+  @return $rate * $size * 1vw;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Noto+Sans+JP:wght@400;700;900&family=Noto+Serif+JP:wght@400;700;900&display=swap");
+
+@mixin gradi {
+  background: -moz-linear-gradient(left, #de3d49, #473889);
+  background: -webkit-linear-gradient(left, #de3d49, #473889);
+  background: linear-gradient(to right, #473889, #de3d49);
+}
+
+@font-face {
+  font-family: "Hemi";
+  src: url(../font/hemi-head-bd-it.ttf) format("truetype");
+}

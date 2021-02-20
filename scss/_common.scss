@@ -1,0 +1,358 @@
+// main: ../style.scss
+
+/*  common CSS
+------------------------------------------------------------------------------*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: vw-sp(160);
+  width: 100%;
+  position: fixed;
+  background: #fff;
+  z-index: 999;
+  .header-logo {
+    width: 217px;
+    margin-left: 20px;
+  }
+  ul.nav {
+    display: none;
+  }
+}
+footer {
+  margin-top: 5em;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 4em 0;
+  .footer-nav {
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      li::after {
+        content: "　/　";
+      }
+      li:last-child::after {
+        content: "";
+      }
+    }
+  }
+  .footer-logo {
+    margin-top: 4em;
+  }
+}
+
+ul.btn-box {
+  width: 90%;
+  margin-left:auto;
+  margin-right:auto;
+  li.btn a {
+    border-radius: 100vh;
+    font-size: vw-sp(36);
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: vw-sp(200);
+    line-height: .1;
+    span {
+      font-size: vw-sp(48);
+      height: vw-sp(40);
+    }
+    .btn-img{
+      width: vw-sp(360);
+      margin-right: 0.25em;
+    }
+  }
+  .btn-primary {
+    @include gradi;
+    border-radius: 100vh;
+    transition: all 0.3s;
+    a {
+      width: 100%;
+      color: #fff;
+    }
+    a:hover {
+      background: #473889;
+    }
+  }
+  .btn-secondary a {
+    margin-top: vw-sp(30);
+    background-color: #fff;
+    border: 3px solid $color-red;
+    width: 100%;
+    color: $color-red;
+  }
+  .btn-secondary a:hover {
+    background-color: $color-red;
+    color: #fff;
+  }
+}
+.caution01 {
+  counter-reset: item;
+  max-width: vw-sp(680);
+  margin: 0 auto;
+  text-align: left;
+  li {
+    text-indent: -2.5em;
+    padding-left: 2.5em;
+  }
+  li:before {
+    counter-increment: item;
+    content: "※" counter(item);
+    padding-right: 0.5em;
+  }
+}
+.caution02 {
+  counter-reset: item;
+  max-width: vw-sp(680);
+  margin: 0 auto;
+  text-align: left;
+  li {
+    text-indent: -1em;
+    padding-left: 1em;
+  }
+  li:before {
+    content: "※";
+  }
+}
+.caution03 {
+  li {
+    text-indent: -1em;
+    padding-left: 1em;
+  }
+}
+.sec-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    font-style: italic;
+    font-size: vw-sp(48);
+    font-weight: 700;
+    font-feature-settings: normal;
+    display: flex;
+    align-items: center;
+    img{
+      width: vw-sp(360);
+    }
+  }
+}
+
+/* ----------------- ハンバーガーメニュー  */
+
+#hamburger {
+  z-index: 9999;
+  position: fixed;
+  .menu {
+    background-color: #fff;
+    margin-top: vw-sp(160);
+    padding: 0 3em;
+    width: 100vw;
+    height: 90vh;
+    ul.nav {
+      li {
+        font-size: 24px;
+        border-bottom: 1px solid #000;
+        font-weight: 600;
+        line-height: 3;
+        font-feature-settings: normal;
+      }
+
+      li.nav-btn {
+        @include gradi;
+        margin-right: 0;
+        width: 200px;
+        height: 80px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        border-radius: 50vh;
+        margin-top: 1em;
+      }
+    }
+  }
+}
+/*ボタン*/
+.hamburger_btn {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: vw-sp(160);
+  height: vw-sp(160);
+  cursor: pointer;
+  z-index: 50;
+  background-color: $color-red;
+}
+
+.hamburger_btn .line {
+  position: absolute;
+  top: 0;
+  left: vw-sp(35);
+  width: vw-sp(100);
+  height: vw-sp(4);
+  background: #fff;
+  text-align: center;
+}
+
+.hamburger_btn .line_01 {
+  top: vw-sp(55);
+  transition: 0.4s ease;
+}
+
+.hamburger_btn .line_02 {
+  top: vw-sp(75);
+  transition: 0.4s ease;
+}
+
+.hamburger_btn .line_03 {
+  top: vw-sp(95);
+  transition: 0.4s ease;
+}
+
+.btn_line01 {
+  background: $color-base !important;
+  transform: translateY(vw-sp(20)) rotate(-45deg);
+  transition: 0.4s ease;
+}
+
+.btn_line02 {
+  transition: 0.4s ease;
+  opacity: 0;
+}
+
+.btn_line03 {
+  background: $color-base !important;
+  transform: translateY(vw-sp(-20)) rotate(45deg);
+  transition: 0.4s ease;
+}
+
+.menu-enter-active,
+.menu-leave-active {
+  transition: opacity 0.3s;
+}
+
+.menu-enter,
+.menu-leave-to {
+  opacity: 0;
+}
+
+.menu-leave,
+.menu-enter-to {
+  opacity: 1;
+}
+
+@media screen and (min-width: $breakpoint1) {
+  #hamburger {
+    display: none;
+  }
+  .header {
+    height: vw-pc(80);
+    ul.nav {
+      display: flex;
+      align-items: center;
+
+      li {
+        margin-right: 3rem;
+        font-weight: 600;
+      }
+
+      li.nav-btn {
+        @include gradi;
+        margin-right: 0;
+        width: vw-pc(200);
+        height: vw-pc(80);
+
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #fff;
+          width: 100%;
+          height: 100%;
+        }
+        a:hover {
+          background-color: #473889;
+        }
+      }
+    }
+  }
+  ul.btn-box {
+    li.btn a {
+      font-size: vw-pc(18);
+      height: vw-pc(80);
+      line-height: 1;
+      span {
+        font-size: vw-pc(24);
+        height: vw-pc(24);
+        line-height: 1;
+      }
+      .btn-img{
+        width: vw-pc(180);
+      }
+    }
+    .btn-secondary a {
+      margin-top: vw-pc(30);
+      border: vw-pc(3) solid $color-red;
+    }
+  }
+  .caution01 {
+    max-width: 800px;
+  }
+  .caution02 {
+    max-width: 800px;
+  }
+  .sec-title {
+    h2 {
+      font-size: vw-pc(36);
+      img{
+        width: vw-pc(236);
+      }
+    }
+  }
+}
+@media screen and (min-width: $breakpoint2) {
+  .header {
+    height: 80px;
+    ul.nav {
+      li {
+        font-weight: 600;
+      }
+      li.nav-btn {
+        width: 200px;
+        height: 80px;
+      }
+    }
+  }
+  ul.btn-box {
+    width: 100%;
+    li.btn a {
+      font-size: 18px;
+      height: 80px;
+      span {
+        font-size: 24px;
+        height: 24px;
+      }
+      .btn-img{
+        width: 180px;
+      }
+    }
+    }
+    .btn-secondary a {
+      margin-top: 30px;
+      border: 3px solid $color-red;
+    }
+    .sec-title {
+      h2 {
+        font-size: 36px;
+        img{
+          width: 236px;
+        }
+      }
+    }
+}

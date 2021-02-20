@@ -1,0 +1,158 @@
+// main: ../style.scss
+
+/*  UTILIS
+------------------------------------------------------------------------------*/
+
+/*  配置
+-------------------------------------------------------*/
+
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
+.center {
+  text-align: center;
+}
+.flexbox {
+  display: flex;
+}
+@media screen and (max-width: $breakpoint1-max) {
+  .flexbox {
+    display: block;
+  }
+}
+
+/*  テキスト
+-------------------------------------------------------*/
+.font2 {
+  font-family: $font2;
+  font-weight: 700;
+}
+.italic {
+  font-style: italic;
+}
+.spacing {
+  font-feature-settings: normal;
+}
+.b {
+  font-weight: 600;
+}
+.f11 {
+  font-size: vw-sp(20);
+}
+.f13 {
+  font-size: vw-sp(22);
+}
+.f15 {
+  font-size: vw-sp(26);
+}
+.f18 {
+  font-size: vw-sp(32);
+}
+.f24 {
+  font-size: vw-sp(36);
+}
+@media screen and (min-width: $breakpoint1) {
+  .f11 {
+    font-size: vw-pc(11);
+  }
+  .f13 {
+    font-size: vw-pc(13);
+  }
+  .f15 {
+    font-size: vw-pc(15);
+  }
+  .f18 {
+    font-size: vw-pc(18);
+  }
+  .f24 {
+    font-size: vw-pc(24);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+  .f11 {
+    font-size: 1.1em;
+  }
+  .f13 {
+    font-size: 1.3em;
+  }
+  .f15 {
+    font-size: 1.5em;
+  }
+  .f18 {
+    font-size: 1.8em;
+  }
+  .f24 {
+    font-size: 2.4em;
+  }
+}
+
+/* 表示非表示
+-------------------------------------------------------*/
+
+@media screen and (max-width: $breakpoint1-max) {
+  .none--sp {
+    display: none !important;
+  }
+  .br__sp {
+    display: block;
+  }
+  .br--pc {
+    display: none;
+  }
+}
+
+@media screen and (min-width: $breakpoint1) {
+  .none--pc {
+    display: none !important;
+  }
+  .br__sp {
+    display: inline;
+  }
+  .br--sp {
+    display: none;
+  }
+}
+
+/*  画像
+-------------------------------------------------------*/
+
+.img--fit {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+/*  フォーム
+-------------------------------------------------------*/
+input[type="file"],
+input[type="submit"],
+input[type="radio"] {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+}
+input[type="radio"] + span {
+  position: relative;
+}
+input[type="radio"] + span::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  display: block;
+  background-color: #fff;
+  transform: translateY(-50%);
+}
+input[type="radio"]:checked + span::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  display: block;
+  background-color: $color-blue;
+  transform: translateY(-50%);
+}
+/*  その他
+-------------------------------------------------------*/
