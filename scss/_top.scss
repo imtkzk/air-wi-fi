@@ -639,7 +639,7 @@
     width: vw-sp(27);
     border-radius: 50%;
     left: vw-sp(-30);
-    margin-top: vw-sp(-110);
+    top: vw-sp(-110);
   }
   .flow-cont li.step01::before {
     background-color: #fff;
@@ -1579,7 +1579,7 @@
           }
         }
         .option-price {
-          font-style: italic;
+          font-style: normal;
           position: relative;
           .price {
             font-family: $font2;
