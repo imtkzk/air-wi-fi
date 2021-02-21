@@ -1560,7 +1560,7 @@ ul.btn-box .btn-secondary a:hover {
 
 .flow .flow-cont li::before {
   content: "";
-  position: absolute;
+  position: relative;
   height: 3.51563vw;
   width: 3.51563vw;
   border-radius: 50%;

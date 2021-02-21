@@ -634,7 +634,7 @@
   }
   .flow-cont li::before {
     content: "";
-    position: absolute;
+    position: relative;
     height: vw-sp(27);
     width: vw-sp(27);
     border-radius: 50%;
