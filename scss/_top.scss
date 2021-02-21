@@ -22,7 +22,7 @@
         font-feature-settings: normal;
         letter-spacing: 0.125em;
         padding: 0.1em 0.5em;
-        margin-bottom: vw-sp(40);
+        margin-bottom: vw-sp(30);
         line-height: 1;
         box-shadow: vw-sp(10) vw-sp(10) $color-yellow;
         display: inline-block;
@@ -419,11 +419,12 @@
 .topics::before {
   content: "";
   background: url(../img/top/topics-before.png) no-repeat;
+  background-size: cover;
   position: absolute;
-  width: 150px;
-  height: 170px;
-  left: -80px;
-  top: -70px;
+  width: vw-sp(150);
+  height: vw-sp(170);
+  left: vw-sp(-80);
+  top: vw-sp(-70);
 }
 .topics::after {
   content: "TOPICS";
@@ -588,7 +589,7 @@
   padding: vw-sp(200) 0;
   position: relative;
   .sec-title {
-    margin-bottom: 50px;
+    margin-bottom: vw-sp(50);
     h2{
       display: block;
       span{
@@ -766,10 +767,10 @@
   }
 }
 .spec {
-  background: url(../img/top/spec-bg.png) top center no-repeat;
+  background: url(../img/top/spec-bg.png) top left no-repeat;
   background-size: cover;
   text-align: center;
-  padding: vw-sp(50) 0 vw-sp(250);
+  padding: vw-sp(50) 0 vw-sp(150);
   .sec-title{
   h2{
     display: block;
@@ -777,6 +778,9 @@
       margin-top: vw-sp(20);
     }
   }
+  }
+  .spec-cont{
+    margin-top: vw-sp(100);
   }
   #tab {
     text-align: left;
@@ -934,6 +938,9 @@
           margin-top: 0;
         }
     }
+    }
+    .spec-cont{
+      margin-top: 0;
     }
     #tab {
       max-width: vw-pc(1000);
@@ -1110,7 +1117,7 @@
 }
 .cta-secondary {
   max-width: 100%;
-  margin: 0 auto vw-sp(80);
+  margin: 0 auto vw-sp(160);
   text-align: center;
   position: relative;
   .maximum {
@@ -1231,6 +1238,8 @@
   background-color: #f8f8f8;
   text-align: center;
   position: relative;
+  padding-top: vw-sp(100);
+  padding-bottom: vw-sp(100);
   .attention-cont {
     position: relative;
     max-width: vw-sp(680);
@@ -1392,6 +1401,8 @@
 @media screen and (min-width: $breakpoint1){
   .attention {
     margin-top: vw-pc(100);
+    padding-top: 0;
+    padding-bottom: 0;
     .attention-cont {
       max-width: vw-pc(800);
       .attention-title h3 {
@@ -1546,10 +1557,12 @@
     }
   }
   }
-  background: url(../img/top/option-bg.png) no-repeat center top;
+  background: url(../img/top/option-bg.png) no-repeat left top;
   background-size: cover;
-  padding: vw-sp(100) 0;
+  padding: vw-sp(200) 0;
   text-align: center;
+  position: relative;
+  top: vw-sp(-110);
   .option-box {
     margin: vw-sp(50) auto 0;
     width: vw-sp(680);
@@ -1571,9 +1584,11 @@
       padding: vw-sp(30);
       text-align: left;
       .option-inner-box {
+        text-align: center;
         font-size: vw-sp(48);
         font-weight: 600;
         .option-catch {
+          text-align: left;
           span {
             color: $color-red;
           }
@@ -1647,6 +1662,7 @@
 @media screen and (min-width: $breakpoint1){
   .option {
     padding: vw-pc(100) 0;
+    top: 0;
     .sec-title{
       h2{
         display: flex;
@@ -1852,6 +1868,7 @@
   .oversea {
     top: 0;
     padding: 0;
+    margin-bottom: 0;
     .sec-title{
       h2{
         display: flex;

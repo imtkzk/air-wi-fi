@@ -610,11 +610,11 @@ ul.btn-box .btn-secondary a:hover {
   margin-top: 20.83333vw;
   padding: 0 3em;
   width: 100vw;
-  height: 90vh;
+  height: 80vh;
 }
 
 #hamburger .menu ul.nav li {
-  font-size: 24px;
+  font-size: 5.20833vw;
   border-bottom: 1px solid #000;
   font-weight: 600;
   line-height: 3;
@@ -626,8 +626,8 @@ ul.btn-box .btn-secondary a:hover {
   background: -webkit-gradient(linear, left top, right top, from(#473889), to(#de3d49));
   background: linear-gradient(to right, #473889, #de3d49);
   margin-right: 0;
-  width: 200px;
-  height: 80px;
+  width: 52.08333vw;
+  height: 20.83333vw;
   color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -864,7 +864,7 @@ ul.btn-box .btn-secondary a:hover {
           font-feature-settings: normal;
   letter-spacing: 0.125em;
   padding: 0.1em 0.5em;
-  margin-bottom: 5.20833vw;
+  margin-bottom: 3.90625vw;
   line-height: 1;
   -webkit-box-shadow: 1.30208vw 1.30208vw #f3e027;
           box-shadow: 1.30208vw 1.30208vw #f3e027;
@@ -1318,11 +1318,12 @@ ul.btn-box .btn-secondary a:hover {
 .topics::before {
   content: "";
   background: url(../img/top/topics-before.png) no-repeat;
+  background-size: cover;
   position: absolute;
-  width: 150px;
-  height: 170px;
-  left: -80px;
-  top: -70px;
+  width: 19.53125vw;
+  height: 22.13542vw;
+  left: -10.41667vw;
+  top: -9.11458vw;
 }
 
 .topics::after {
@@ -1500,7 +1501,7 @@ ul.btn-box .btn-secondary a:hover {
 }
 
 .flow .sec-title {
-  margin-bottom: 50px;
+  margin-bottom: 6.51042vw;
 }
 
 .flow .sec-title h2 {
@@ -1701,10 +1702,10 @@ ul.btn-box .btn-secondary a:hover {
 }
 
 .spec {
-  background: url(../img/top/spec-bg.png) top center no-repeat;
+  background: url(../img/top/spec-bg.png) top left no-repeat;
   background-size: cover;
   text-align: center;
-  padding: 6.51042vw 0 32.55208vw;
+  padding: 6.51042vw 0 19.53125vw;
 }
 
 .spec .sec-title h2 {
@@ -1713,6 +1714,10 @@ ul.btn-box .btn-secondary a:hover {
 
 .spec .sec-title h2 span {
   margin-top: 2.60417vw;
+}
+
+.spec .spec-cont {
+  margin-top: 13.02083vw;
 }
 
 .spec #tab {
@@ -1913,6 +1918,9 @@ ul.btn-box .btn-secondary a:hover {
   .spec .sec-title h2 span {
     margin-top: 0;
   }
+  .spec .spec-cont {
+    margin-top: 0;
+  }
   .spec #tab {
     max-width: 69.44444vw;
     margin: 3.47222vw auto;
@@ -2078,7 +2086,7 @@ ul.btn-box .btn-secondary a:hover {
 
 .cta-secondary {
   max-width: 100%;
-  margin: 0 auto 10.41667vw;
+  margin: 0 auto 20.83333vw;
   text-align: center;
   position: relative;
 }
@@ -2211,6 +2219,8 @@ ul.btn-box .btn-secondary a:hover {
   background-color: #f8f8f8;
   text-align: center;
   position: relative;
+  padding-top: 13.02083vw;
+  padding-bottom: 13.02083vw;
 }
 
 .attention .attention-cont {
@@ -2417,6 +2427,8 @@ ul.btn-box .btn-secondary a:hover {
 @media screen and (min-width: 769px) {
   .attention {
     margin-top: 6.94444vw;
+    padding-top: 0;
+    padding-bottom: 0;
   }
   .attention .attention-cont {
     max-width: 55.55556vw;
@@ -2557,10 +2569,12 @@ ul.btn-box .btn-secondary a:hover {
 }
 
 .option {
-  background: url(../img/top/option-bg.png) no-repeat center top;
+  background: url(../img/top/option-bg.png) no-repeat left top;
   background-size: cover;
-  padding: 13.02083vw 0;
+  padding: 26.04167vw 0;
   text-align: center;
+  position: relative;
+  top: -14.32292vw;
 }
 
 .option .sec-title h2 {
@@ -2605,8 +2619,13 @@ ul.btn-box .btn-secondary a:hover {
 }
 
 .option .option-box .option-cont-inner .option-inner-box {
+  text-align: center;
   font-size: 6.25vw;
   font-weight: 600;
+}
+
+.option .option-box .option-cont-inner .option-inner-box .option-catch {
+  text-align: left;
 }
 
 .option .option-box .option-cont-inner .option-inner-box .option-catch span {
@@ -2689,6 +2708,7 @@ ul.btn-box .btn-secondary a:hover {
 @media screen and (min-width: 769px) {
   .option {
     padding: 6.94444vw 0;
+    top: 0;
   }
   .option .sec-title h2 {
     display: -webkit-box;
@@ -2937,6 +2957,7 @@ ul.btn-box .btn-secondary a:hover {
   .oversea {
     top: 0;
     padding: 0;
+    margin-bottom: 0;
     background: url(../img/top/oversea-bg.png) no-repeat center bottom;
     background-size: cover;
     padding: 6.94444vw 0;

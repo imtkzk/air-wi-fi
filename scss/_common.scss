@@ -152,10 +152,10 @@ ul.btn-box {
     margin-top: vw-sp(160);
     padding: 0 3em;
     width: 100vw;
-    height: 90vh;
+    height: 80vh;
     ul.nav {
       li {
-        font-size: 24px;
+        font-size: vw-sp(40);
         border-bottom: 1px solid #000;
         font-weight: 600;
         line-height: 3;
@@ -165,8 +165,8 @@ ul.btn-box {
       li.nav-btn {
         @include gradi;
         margin-right: 0;
-        width: 200px;
-        height: 80px;
+        width: vw-sp(400);
+        height: vw-sp(160);
         color: #fff;
         display: flex;
         align-items: center;
