@@ -627,8 +627,8 @@
     content: "";
     position: absolute;
     background-color: $color-red;
-    height: vw-sp(380);
-    top: vw-sp(50);
+    height: vw-sp(480);
+    top: vw-sp(100);
     width: vw-sp(3);
     left: vw-sp(-15);
   }
@@ -639,7 +639,7 @@
     width: vw-sp(27);
     border-radius: 50%;
     left: vw-sp(-50);
-    top: vw-sp(110);
+    top: vw-sp(50);
   }
   .flow-cont li.step01::before {
     background-color: #fff;
@@ -1342,11 +1342,11 @@
       justify-content: center;
       .circle {
         background-color: #fff;
-        width: vw-sp(310);
-        height: vw-sp(310);
+        width: vw-sp(280);
+        height: vw-sp(280);
         border-radius: 50%;
-        border: vw-sp(10) solid $color-red;
-        font-size: vw-sp(36);
+        border: vw-sp(6) solid $color-red;
+        font-size: vw-sp(32);
         color: $color-red;
         font-weight: 600;
         display: flex;
@@ -1826,14 +1826,14 @@
             .price {
               font-family: $font2;
               color: $color-red;
-              font-size: vw-sp(150);
+              font-size: vw-sp(140);
               margin-right: 0.1em;
             }
             .en::before {
               content: "税抜";
               position: absolute;
-              font-size: vw-sp(36);
-              bottom: 2em;
+              font-size: vw-sp(32);
+              bottom: 2.5em;
               font-style: italic;
             }
           }

@@ -1552,8 +1552,8 @@ ul.btn-box .btn-secondary a:hover {
   content: "";
   position: absolute;
   background-color: #e41f1a;
-  height: 49.47917vw;
-  top: 6.51042vw;
+  height: 62.5vw;
+  top: 13.02083vw;
   width: 0.39062vw;
   left: -1.95313vw;
 }
@@ -1565,7 +1565,7 @@ ul.btn-box .btn-secondary a:hover {
   width: 3.51563vw;
   border-radius: 50%;
   left: -6.51042vw;
-  top: 14.32292vw;
+  top: 6.51042vw;
 }
 
 .flow .flow-cont li.step01::before {
@@ -2354,11 +2354,11 @@ ul.btn-box .btn-secondary a:hover {
 
 .attention .attention-cont .salestxt .circle {
   background-color: #fff;
-  width: 40.36458vw;
-  height: 40.36458vw;
+  width: 36.45833vw;
+  height: 36.45833vw;
   border-radius: 50%;
-  border: 1.30208vw solid #e41f1a;
-  font-size: 4.6875vw;
+  border: 0.78125vw solid #e41f1a;
+  font-size: 4.16667vw;
   color: #e41f1a;
   font-weight: 600;
   display: -webkit-box;
@@ -2914,15 +2914,15 @@ ul.btn-box .btn-secondary a:hover {
 .oversea .oversea-cont .area-cont .area-box .area-price .price-box .price {
   font-family: "Hemi", sans-serif;
   color: #e41f1a;
-  font-size: 19.53125vw;
+  font-size: 18.22917vw;
   margin-right: 0.1em;
 }
 
 .oversea .oversea-cont .area-cont .area-box .area-price .price-box .en::before {
   content: "税抜";
   position: absolute;
-  font-size: 4.6875vw;
-  bottom: 2em;
+  font-size: 4.16667vw;
+  bottom: 2.5em;
   font-style: italic;
 }
 
