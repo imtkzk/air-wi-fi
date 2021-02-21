@@ -62,7 +62,7 @@
   </header>
   <main class="main">
     <section class="mv">
-      <div class="cont left">
+      <div class="cont left fade-left">
         <div class="mv-catch01-box">
           <ul>
             <li>最短即日配送</li>
@@ -75,7 +75,7 @@
             class="img--fit">
         </div>
       </div>
-      <div class="cont right">
+      <div class="cont right fade-right">
         <div class="mv-catch02">選べる<span>3</span>つのプラン</div>
         <div class="mv-logo none--sp"><img src="img/top/mv-logo.png" srcset="img/top/mv-logo.png 1x, img/top/mv-logo-2x.png 2x"
             alt="AiR-Wi-Fi(エアワイファイ)" class="img--fit"></div>
@@ -95,7 +95,7 @@
         </ul>
     </section>
     <section class="mv-bottom">
-      <ol class="caution01">
+      <ol class="caution01 fade-up">
         <li>一般的なご利用環境における十分なデーター容量を提供しておりますが、ネットワーク品質の維持と公平な電波利用の観点から、大容量の通信を行う利用者に対し通信の停止や速度低下措置を行わせていただきます。<br>
           以下のようなご利用はなるべく控えていただけますようお願いいたします。<br>
           長時間の動画コンテンツの視聴、長時間のオンラインゲームのご利用、大容量のダウンロード、長時間のネット通話、高解像度動画などの視聴、複数機器の常時接続などはお控えください。
@@ -113,7 +113,7 @@
             alt="AiR-Wi-Fi(エアワイファイ)">とは？</h2>
       </div>
       <div class="cont">
-        <div class="about-list-cont">
+        <div class="about-list-cont fade-up">
           <ul>
             <li class="list-box list01">
               <div class="list-box__img"><img src="img/top/about-list01.png" srcset="img/top/about-list01.png 1x, img/top/about-list01-2x.png 2x" alt="無制限"></div>
@@ -134,7 +134,7 @@
             </li>
           </ul>
         </div>
-        <ol class="caution01">
+        <ol class="caution01 fade-up">
           <li>毎月1日から末日の間、100GBまで無制限でご使用いただけます。ギガ数を超えた場合につきましては概ね128Kbpsで通信可能となっております。
             通信制限の解除は毎月1日のおおよそ00時00分~09時00分です。<br>
             また違法ダウンロードや犯罪行為などの不正利用の疑いがある場合、端末自体のご利用停止を行う場合があります。<br>
@@ -143,12 +143,12 @@
         </ol>
       </div>
     </section>
-    <section class="topics">
+    <section class="topics fade-up">
       <div class="sec-title">
         <h2><img src="img/top/title-logo.png" srcset="img/top/title-logo.png 1x, img/top/title-logo-2x.png 2x"
             alt="AiR-Wi-Fi(エアワイファイ)">トピック</h2>
       </div>
-      <div class="topics-cont">
+      <div class="topics-cont fade-up">
         <ul>
           <li>AiR-Wi-FiがWi-Fiの神の「AiR-WiFiの裏側を暴いてみた」に掲載されました</li>
           <li>AiR-Wi-FiがWi-Fiの親の「AiR-WiFiの闇を暴露！！」に掲載されました</li>
@@ -162,11 +162,11 @@
       </div>
     </section>
     <section class="cta-primary">
-      <div class="cta-cont">
+      <div class="cta-cont fade-left">
         <div class="cta-product-img">
           <img src="img/top/cta-product-img.png" srcset="img/top/cta-product-img.png 1x, img/top/cta-product-img-2x.png 2x" alt="AiR-Wi-Fi(エアワイファイ)製品" class="img--fit">
         </div>
-        <div class="cta-primary-box">
+        <div class="cta-primary-box fade-up">
           <p class="pricetxt">Webからのお申し込みで<br><span class="month">月額</span><span class="price">2,980</span><span class="en">円〜</span></p>
           <ul class="btn-box">
             <li class="btn btn-primary"><a href="delivery.html"><div class="btn-img"><img src="img/top/btn-primary-logo.png"
@@ -184,7 +184,7 @@
         <h2><img src="img/top/title-logo.png" srcset="img/top/title-logo.png 1x, img/top/title-logo-2x.png 2x"
             alt="AiR-Wi-Fi(エアワイファイ)"><span class="br__sp">利用までの流れ</span></h2>
       </div>
-      <div class="flow-cont">
+      <div class="flow-cont fade-up">
         <ul>
           <li class="step01"><span class="step">STEP 01</span><img src="img/top/step01-img.png" srcset="img/top/step01-img.png 1x, img/top/step01-img-2x.png 2x" alt="step01"><span class="step-explane">Webで申し込み、<span class="br__sp">最短即日発送</span></li>
           <li class="step02"><span class="step">STEP 02</span><img src="img/top/step02-img.png" srcset="img/top/step02-img.png 1x, img/top/step02-img-2x.png 2x" alt="step02"><span class="step-explane">工事不要で受け取り</span></li>
@@ -199,7 +199,7 @@
       </div>
       <div class="spec-cont">
         <div id="tab">
-            <div class="tabmenu">
+            <div class="tabmenu fade-up">
               <div class="tabs">
                 <input type="radio" id="tab1" name="tab" value="1" v-model="isActive">
                 <label for="tab1">サクッとプラン</label>
@@ -209,9 +209,9 @@
                 <label for="tab3">らくらくプラン</label>
               </div>
             </div>
-            <ul class="spec-lists">
+            <ul class="spec-lists fade-up">
               <li v-if="isActive === '1'" class="spec-list spec-list01">
-                <div class="spec-contents">
+                <div class="spec-contents fade-up">
                   <div class="list-chatch-box">
                     <div class="maximum"><span>最大100GBまで</span></div>
                     <div class="spec-pricetxt">どんなに使っても変わらず<br><span class="month">月額</span><span class="price">2,980</span><span class="en">円〜</span></div>
@@ -221,33 +221,33 @@
                 </div>
                 <div class="spec-detail-cont">
                   <ul>
-                    <li class="spec-detail-list list01">
+                    <li class="spec-detail-list list01 fade-up">
                       <div class="spec-detail__listimg"><img src="img/top/spec-detail-list01.png" srcset="img/top/spec-detail-list01.png 1x, img/top/spec-detail-list01-2x.png 2x" alt="上り最大150.0mbps"></div>
                       <div class="spec-detail__txt">上り最大<br><span class="num"><b>150</b><small>.0</small></span><span class="br__sp">mbps</span></div>
                     </li>
-                    <li class="spec-detail-list list02">
+                    <li class="spec-detail-list list02 fade-up">
                       <div class="spec-detail__listimg"><img src="img/top/spec-detail-list02.png" srcset="img/top/spec-detail-list02.png 1x, img/top/spec-detail-list02-2x.png 2x" alt="下り最大50.0mbps"></div>
                       <div class="spec-detail__txt">下り最大<br><span class="num"><b>50</b><small>.0</small></span><span class="br__sp">mbps</span></div>
                     </li>
-                    <li class="spec-detail-list list03">
+                    <li class="spec-detail-list list03 fade-up">
                       <div class="spec-detail__listimg"><img src="img/top/spec-detail-list03.png" srcset="img/top/spec-detail-list03.png 1x, img/top/spec-detail-list03-2x.png 2x" alt="同時接続台数5台"></div>
                       <div class="spec-detail__txt">同時接続台数<br class="none--pc"><span class="num"><b>5</b></span>台</div>
                     </li>
-                    <li class="spec-detail-list list04">
+                    <li class="spec-detail-list list04 fade-up">
                       <div class="spec-detail__listimg"><img src="img/top/spec-detail-list04.png" srcset="img/top/spec-detail-list04.png 1x, img/top/spec-detail-list04-2x.png 2x" alt="海外どこでも利用可能"></div>
                       <div class="spec-detail__txt">海外どこでも<br>利用可能</div>
                     </li>
-                    <li class="spec-detail-list list05">
+                    <li class="spec-detail-list list05 fade-up">
                       <div class="spec-detail__listimg"><img src="img/top/spec-detail-list05.png" srcset="img/top/spec-detail-list05.png 1x, img/top/spec-detail-list05-2x.png 2x" alt="最大12時間使用可能"></div>
                       <div class="spec-detail__txt">最大<span class="num"><b>12</b></span>時間<br>使用可能</div>
                     </li>
-                    <li class="spec-detail-list list06">
+                    <li class="spec-detail-list list06 fade-up">
                       <div class="spec-detail__listimg"><img src="img/top/spec-detail-list06.png" srcset="img/top/spec-detail-list06.png 1x, img/top/spec-detail-list06-2x.png 2x" alt="端末の重さ"></div>
                       <div class="spec-detail__txt">端末の重さ<br><span class="num"><b>149</b></span>g</div>
                     </li>
                   </ul>
                 </div>
-                <div class="spec-caution">
+                <div class="spec-caution fade-up">
                   <ol class="caution02">
                     <li>日本国内の4Gネットワークに対応しています。エリア内であっても建物や障害物、電波塔などの影響で通信ができない場合がございいますため予めご了承ください。</li>
                     <li>海外利用時は別途料金となります。</li>
@@ -257,7 +257,7 @@
                 </div>
               </li>
               <li v-else-if="isActive === '2'" class="spec-list spec-list02">
-                <div class="spec-contents">
+                <div class="spec-contents fade-up">
                   <div class="list-chatch-box">
                     <div class="maximum"><span>最大100GBまで</span></div>
                     <div class="spec-pricetxt">どんなに使っても変わらず<br><span class="month">月額</span><span class="price">3,580</span><span class="en">円〜</span></div>
@@ -267,33 +267,33 @@
                 </div>
                 <div class="spec-detail-cont">
                   <ul>
-                    <li class="spec-detail-list list01">
+                    <li class="spec-detail-list list01 fade-up">
                       <div class="spec-detail__listimg"><img src="img/top/spec-detail-list01.png" srcset="img/top/spec-detail-list01.png 1x, img/top/spec-detail-list01-2x.png 2x" alt="上り最大150.0mbps"></div>
                       <div class="spec-detail__txt">上り最大<br><span class="num"><b>150</b><small>.0</small></span><span class="br__sp">mbps</span></div>
                     </li>
-                    <li class="spec-detail-list list02">
+                    <li class="spec-detail-list list02 fade-up">
                       <div class="spec-detail__listimg"><img src="img/top/spec-detail-list02.png" srcset="img/top/spec-detail-list02.png 1x, img/top/spec-detail-list02-2x.png 2x" alt="下り最大50.0mbps"></div>
                       <div class="spec-detail__txt">下り最大<br><span class="num"><b>50</b><small>.0</small></span><span class="br__sp">mbps</span></div>
                     </li>
-                    <li class="spec-detail-list list03">
+                    <li class="spec-detail-list list03 fade-up">
                       <div class="spec-detail__listimg"><img src="img/top/spec-detail-list03.png" srcset="img/top/spec-detail-list03.png 1x, img/top/spec-detail-list03-2x.png 2x" alt="同時接続台数5台"></div>
                       <div class="spec-detail__txt">同時接続台数<br class="none--pc"><span class="num"><b>5</b></span>台</div>
                     </li>
-                    <li class="spec-detail-list list04">
+                    <li class="spec-detail-list list04 fade-up">
                       <div class="spec-detail__listimg"><img src="img/top/spec-detail-list04.png" srcset="img/top/spec-detail-list04.png 1x, img/top/spec-detail-list04-2x.png 2x" alt="海外どこでも利用可能"></div>
                       <div class="spec-detail__txt">海外どこでも<br>利用可能</div>
                     </li>
-                    <li class="spec-detail-list list05">
+                    <li class="spec-detail-list list05 fade-up">
                       <div class="spec-detail__listimg"><img src="img/top/spec-detail-list05.png" srcset="img/top/spec-detail-list05.png 1x, img/top/spec-detail-list05-2x.png 2x" alt="最大12時間使用可能"></div>
                       <div class="spec-detail__txt">最大<span class="num"><b>12</b></span>時間<br>使用可能</div>
                     </li>
-                    <li class="spec-detail-list list06">
+                    <li class="spec-detail-list list06 fade-up">
                       <div class="spec-detail__listimg"><img src="img/top/spec-detail-list06.png" srcset="img/top/spec-detail-list06.png 1x, img/top/spec-detail-list06-2x.png 2x" alt="端末の重さ"></div>
                       <div class="spec-detail__txt">端末の重さ<br><span class="num"><b>188</b></span>g</div>
                     </li>
                   </ul>
                 </div>
-                <div class="spec-caution">
+                <div class="spec-caution fade-up">
                   <ol class="caution02">
                     <li>日本国内の4Gネットワークに対応しています。エリア内であっても建物や障害物、電波塔などの影響で通信ができない場合がございいますため予めご了承ください。</li>
                     <li>海外利用時は別途料金となります。</li>
@@ -303,7 +303,7 @@
                 </div>
               </li>
               <li v-else-if="isActive === '3'" class="spec-list spec-list03">
-                <div class="spec-contents">
+                <div class="spec-contents fade-up">
                   <div class="list-chatch-box">
                     <div class="maximum"><span>最大100GBまで</span></div>
                     <div class="spec-pricetxt">どんなに使っても変わらず<br><span class="month">月額</span><span class="price">3,380</span><span class="en">円〜</span></div>
@@ -313,33 +313,33 @@
                 </div>
                 <div class="spec-detail-cont">
                   <ul>
-                    <li class="spec-detail-list list01">
+                    <li class="spec-detail-list list01 fade-up">
                       <div class="spec-detail__listimg"><img src="img/top/spec-detail-list01.png" srcset="img/top/spec-detail-list01.png 1x, img/top/spec-detail-list01-2x.png 2x" alt="上り最大150.0mbps"></div>
                       <div class="spec-detail__txt">上り最大<br><span class="num"><b>150</b><small>.0</small></span><span class="br__sp">mbps</span></div>
                     </li>
-                    <li class="spec-detail-list list02">
+                    <li class="spec-detail-list list02 fade-up">
                       <div class="spec-detail__listimg"><img src="img/top/spec-detail-list02.png" srcset="img/top/spec-detail-list02.png 1x, img/top/spec-detail-list02-2x.png 2x" alt="下り最大50.0mbps"></div>
                       <div class="spec-detail__txt">下り最大<br><span class="num"><b>50</b><small>.0</small></span><span class="br__sp">mbps</span></div>
                     </li>
-                    <li class="spec-detail-list list03">
+                    <li class="spec-detail-list list03 fade-up">
                       <div class="spec-detail__listimg"><img src="img/top/spec-detail-list03.png" srcset="img/top/spec-detail-list03.png 1x, img/top/spec-detail-list03-2x.png 2x" alt="同時接続台数5台"></div>
                       <div class="spec-detail__txt">同時接続台数<br class="none-pc"><span class="num"><b>10</b></span>台</div>
                     </li>
-                    <li class="spec-detail-list list04">
+                    <li class="spec-detail-list list04 fade-up">
                       <div class="spec-detail__listimg"><img src="img/top/spec-detail-list04.png" srcset="img/top/spec-detail-list04.png 1x, img/top/spec-detail-list04-2x.png 2x" alt="海外どこでも利用可能"></div>
                       <div class="spec-detail__txt">海外どこでも<br>利用可能</div>
                     </li>
-                    <li class="spec-detail-list list05">
+                    <li class="spec-detail-list list05 fade-up">
                       <div class="spec-detail__listimg"><img src="img/top/spec-detail-list05.png" srcset="img/top/spec-detail-list05.png 1x, img/top/spec-detail-list05-2x.png 2x" alt="最大12時間使用可能"></div>
                       <div class="spec-detail__txt">最大<span class="num"><b>10</b></span>時間<br>使用可能</div>
                     </li>
-                    <li class="spec-detail-list list06">
+                    <li class="spec-detail-list list06 fade-up">
                       <div class="spec-detail__listimg"><img src="img/top/spec-detail-list06.png" srcset="img/top/spec-detail-list06.png 1x, img/top/spec-detail-list06-2x.png 2x" alt="端末の重さ"></div>
                       <div class="spec-detail__txt">端末の重さ<br><span class="num"><b>125</b></span>g</div>
                     </li>
                   </ul>
                 </div>
-                <div class="spec-caution">
+                <div class="spec-caution fade-up">
                   <ol class="caution02">
                     <li>日本国内の4Gネットワークに対応しています。エリア内であっても建物や障害物、電波塔などの影響で通信ができない場合がございいますため予めご了承ください。</li>
                     <li>海外利用時は別途料金となります。</li>
@@ -352,7 +352,7 @@
         </div>
       </div>
     </section>
-    <section class="cta-secondary">
+    <section class="cta-secondary fade-up">
      <div class="maximum"><span>最大100GBまで</span></div>
      <div class="spec-pricetxt">どんなに使っても変わらず<br><span class="month">月額</span><span class="price">2,980</span><span class="en">円〜</span></div>
      <ul class="btn-box">
@@ -366,8 +366,8 @@
     </section>
     <section class="attention">
       <div class="attention-cont contractperiod">
-        <div class="attention-title"><h3>契約期間について</h3></div>
-        <div class="attention-cont">
+        <div class="attention-title fade-up"><h3>契約期間について</h3></div>
+        <div class="attention-cont fade-up">
           <p><span class="important">契約月を1ヶ月目とし、契約更新月は25ヶ月目となります。</span><br>
             24ヶ月以内の契約の場合、 端末をご返却いただきます。それ以降は、返却不要です。</p>
             <div class="btnClick">注意事項</div>
@@ -385,8 +385,8 @@
         </div>
       </div>
       <div class="attention-cont cancellationfee">
-        <div class="attention-title"><h3>解体費用について</h3></div>
-        <div class="attention-cont">
+        <div class="attention-title fade-up"><h3>解体費用について</h3></div>
+        <div class="attention-cont fade-up">
           <table>
             <tbody>
               <tr><th>1年未満</th><td>10,000円 税抜</td></tr>
@@ -410,7 +410,7 @@
         <h2><img src="img/top/title-logo.png" srcset="img/top/title-logo.png 1x, img/top/title-logo-2x.png 2x"
             alt="AiR-Wi-Fi(エアワイファイ)"><span class="br__sp">2つのオプション</span></h2>
       </div>
-      <div class="option-box">
+      <div class="option-box fade-up">
         <div class="option-title"><h3>契約期間なしオプション</h3></div>
         <div class="option-cont-inner">
           <div class="option-inner-box">
@@ -429,7 +429,7 @@
           </div>
         </div>
       </div>
-      <div class="option-box">
+      <div class="option-box fade-up">
         <div class="option-title"><h3>安心オプション</h3></div>
         <div class="option-cont-inner">
           <div class="option-inner-box">
@@ -452,7 +452,7 @@
       </div>
     </section>
     <div class="cta-secondary-02-wrap">
-    <section class="cta-secondary ">
+    <section class="cta-secondary fade-up">
      <div class="maximum"><span>最大100GBまで</span></div>
      <div class="spec-pricetxt">どんなに使っても変わらず<br><span class="month">月額</span><span class="price">2,980</span><span class="en">円〜</span></div>
      <ul class="btn-box">
@@ -471,7 +471,7 @@
         <h2><img src="img/top/title-logo.png" srcset="img/top/title-logo.png 1x, img/top/title-logo-2x.png 2x"
             alt="AiR-Wi-Fi(エアワイファイ)"><span class="br__sp">海外利用について</span></h2>
       </div>
-      <div class="oversea-cont">
+      <div class="oversea-cont fade-up">
         <div class="area-cont">
           <div class="area-box area-box01">
             <div class="area-title">AREA 01</div>
@@ -500,11 +500,11 @@
     <section id="point" class="point">
       <div class="point-cont">
         <ul>
-          <li class="point-list point01">SIMの差し替え<span>不要</span>！</li>
-          <li class="point-list point02"><span>135カ国</span>で利用可能！</li>
-          <li class="point-list point03"><span>電波を入れるだけ</span>で利用可能！</li>
+          <li class="point-list point01 fade-left">SIMの差し替え<span>不要</span>！</li>
+          <li class="point-list point02 fade-left"><span>135カ国</span>で利用可能！</li>
+          <li class="point-list point03 fade-left"><span>電波を入れるだけ</span>で利用可能！</li>
         </ul>
-        <ol class="caution02">
+        <ol class="caution02 fade-up">
           <li>1GB超過後の通信速度128Kbpsにて無制限でご利用頂けます。LTEでの高速通信は1日1GBまでとなりますので予めご了承ください。</li>
           <li>1日の容量リセット時間は日本時間の0:00となります（例：1day=当日0:00～23:59）1GB未満の利用日であっても翌日への容量繰越はできません。</li>
         </ol>
@@ -518,26 +518,26 @@
       </div>
       <div class="faq-cont">
         <ul>
-          <li>
+          <li class="fade-up">
             <div class="question btnClick">利用開始月の月額料金は日割りになりますか？</div>
             <div class="answer">利用開始月の月額料金は日割りを行っておりませんが、<br>お申込み時に次月配送予約でご注文いただけましたら、お申し込み日の翌月に端末を発送させていただきます。<br>
               またお申し込み後に「次月配送予約へのご変更」はいたしかねますためご了承くださいませ。
               </div>
           </li>
-          <li>
+          <li class="fade-up">
             <div class="question btnClick">次月配送予約とは？</div>
             <div class="answer">お申し込み日の翌月の1日より端末がご利用いただけるオプションとなっております。
               ※初期事務手数料の3.000円(税抜)は申し込み日に先立っていただきます。
               ※交通状況やお届け先・在庫状況によって端末到着日が前後する場合がございます。              
               </div>
           </li>
-          <li>
+          <li class="fade-up">
             <div class="question btnClick">送料はかかりますか？</div>
             <div class="answer">初回ご契約時の送料は弊社負担になりますが、
               お客様が解約や故障交換をされる場合、端末返却の送料はお客様負担になります。
               </div>
           </li>
-          <li>
+          <li class="fade-up">
             <div class="question btnClick">配送先や配送日時の指定はできますか？
             </div>
             <div class="answer">配送時間の指定は承っておりません。
@@ -545,19 +545,19 @@
               交通状況やお届け先・在庫状況によって端末到着日が前後する場合がございます。
               </div>
           </li>
-          <li>
+          <li class="fade-up">
             <div class="question btnClick">申し込み完了後、端末はいつ頃届きますでしょうか？</div>
             <div class="answer">平日正午までの申し込みで最短即日発送となり、交通状況やお届け先・在庫状況によって端末到着日が前後する場合がございます。土日祝の場合は翌営業日に発送いたします。
               お荷物の配送状況につきましては配送業者様までお問い合わせください。
               </div>
           </li>
-          <li>
+          <li class="fade-up">
             <div class="question btnClick">商品到着後、エリア外だったり電波が弱かった場合は交換できますか？
             </div>
             <div class="answer">国内通信キャリアが繋がるエリアであれば利用は可能としておりますが、 もし圏外表示の場合はお問い合わせフォームよりご連絡ください。 端末不調の可能性があるため、1年以内であれば無償交換ができます。 なおお客様の破損や端末に損傷があるトラブルや水没は 安心オプション未加入の場合、有償となります。
               </div>
           </li>
-          <li>
+          <li class="fade-up">
             <div class="question btnClick">端末の故障交換は安心オプション加入なしでもできますか？</div>
             <div class="answer">お客様が故意による端末不調ではないと判断された場合、
               申し込み日より1年間は無償交換が可能となっております。
@@ -565,39 +565,39 @@
               安心オプションの詳細はこちらよりご確認いただけます。
               </div>
           </li>
-          <li>
+          <li class="fade-up">
             <div class="question btnClick">端末を紛失した場合</div>
             <div class="answer">端末を紛失した場合、端末再発行費用として20,000円(税抜)が発生致します。
               ※分割支払いは承っておりません。              
               </div>
           </li>
-          <li>
+          <li class="fade-up">
             <div class="question btnClick">お支払い方法について</div>
             <div class="answer">クレジットカードのみのご対応となります。 VISA/JCB/MasterCard/AMERICAN EXPRESS/DinersClubに対応しております。デビットカード、プリペイドカード、海外契約のクレジットカードには対応しておりません。
               </div>
           </li>
-          <li>
+          <li class="fade-up">
             <div class="question btnClick">クレジットカードを変更したい場合は？</div>
             <div class="answer">お問い合わせフォームよりご連絡ください。 弊社より変更届をお送りさせていただきましてご対応させていただきます。
               </div>
           </li>
-          <li>
+          <li class="fade-up">
             <div class="question btnClick">領収書の発行はできますか？</div>
             <div class="answer">領収書はクレジットカードのみのお支払いになるため、カード会社様のご利用代金明細書が正式な領収書になります。 弊社から領収書の発行はいたしませんので、ご了承くださいませ。
               </div>
           </li>
-          <li>
+          <li class="fade-up">
             <div class="question btnClick">未成年のお申込みはできますか？</div>
             <div class="answer">18歳未満の名義でのご契約はいただけません。成人されているご家族様名義でのご契約をお願い致します。
 
               </div>
           </li>
-          <li>
+          <li class="fade-up">
             <div class="question btnClick">ご契約の解約方法について            </div>
             <div class="answer">お問い合わせフォームよりご連絡いただき、 折返しのメールで解約手続きが簡単にできます。解約申請受付後、弊社に端末を返却いただけましたら解約の処理をさせていただきます。
               </div>
           </li>
-          <li>
+          <li class="fade-up">
             <div class="question btnClick">通信速度制限はありますか？</div>
             <div class="answer">最大容量は100GBとなります。<br>一般的なご利用環境における十分なデーター容量を提供しておりますが、ネットワーク品質の維持と公平な電波利用の観点から、大容量の通信を行う利用者に対し通信の停止や速度低下措置を行わせていただきます。<br>
               以下のようなご利用はなるべく控えていただけますようお願いいたします。<br> 長時間の動画コンテンツの視聴、長時間のオンラインゲームのご利用、大容量のダウンロード、長時間のネット通話、高解像度動画などの視聴、複数機器の常時接続などはお控えください。<br>
@@ -607,12 +607,12 @@
               またお申し込み後に「次月配送予約へのご変更」はいたしかねますためご了承くださいませ。
               </div>
           </li>
-          <li>
+          <li class="fade-up">
             <div class="question btnClick">申込後にキャンセルしたいのですが可能でしょうか？</div>
             <div class="answer">申し込み後のキャンセルは出来かねます
               </div>
           </li>
-          <li>
+          <li class="fade-up">
             <div class="question btnClick">付属品をなくしたのですが、解約は可能でしょうか？</div>
             <div class="answer">以下の料金が付属品1つにつき料金が発生いたします。
               また端末を紛失した場合は、別途料金が発生いたします。<br>
@@ -627,7 +627,7 @@
         </ul>
       </div>
     </section>
-    <section class="cta-secondary">
+    <section class="cta-secondary fade-up">
      <div class="maximum"><span>最大100GBまで</span></div>
      <div class="spec-pricetxt">どんなに使っても変わらず<br><span class="month">月額</span><span class="price">2,980</span><span class="en">円〜</span></div>
      <ul class="btn-box">
@@ -654,9 +654,9 @@
     </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+  <script src="js/lib/scrollreveal.js"></script>
   <script src="js/lib/ofi.js"></script>
   <script src="js/common.js"></script>
-  <script src="js/lib/scrollreveal.js"></script>
   <script>
     objectFitImages();
   </script>
