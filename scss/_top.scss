@@ -695,14 +695,15 @@
     }
     .flow-cont::before {
       height: vw-pc(220);
-      top: vw-pc(30);
+      top: vw-pc(50);
       width: vw-pc(3);
       left: vw-pc(-15);
     }
     .flow-cont li::before {
       height: vw-pc(27);
       width: vw-pc(27);
-      left: vw-pc(-30);
+      left: vw-pc(-50);
+      top: vw-pc(0);
       margin-top: 0;
     }
     .flow-cont li.step01::before {
@@ -750,7 +751,7 @@
     .flow-cont li::before {
       height: 27px;
       width: 27px;
-      left: -30px;
+      left: -50px;
     }
     .flow-cont li.step01::before {
       border: 3px solid $color-red;

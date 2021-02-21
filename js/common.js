@@ -28,4 +28,3 @@ function toggle(){
 for (let i = 0; i < acodTitle.length; i ++){
   acodTitle[i].addEventListener('click', toggle)
 }
-

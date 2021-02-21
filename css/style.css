@@ -1629,14 +1629,15 @@ ul.btn-box .btn-secondary a:hover {
   }
   .flow .flow-cont::before {
     height: 15.27778vw;
-    top: 2.08333vw;
+    top: 3.47222vw;
     width: 0.20833vw;
     left: -1.04167vw;
   }
   .flow .flow-cont li::before {
     height: 1.875vw;
     width: 1.875vw;
-    left: -2.08333vw;
+    left: -3.47222vw;
+    top: 0vw;
     margin-top: 0;
   }
   .flow .flow-cont li.step01::before {
@@ -1685,7 +1686,7 @@ ul.btn-box .btn-secondary a:hover {
   .flow .flow-cont li::before {
     height: 27px;
     width: 27px;
-    left: -30px;
+    left: -50px;
   }
   .flow .flow-cont li.step01::before {
     border: 3px solid #e41f1a;
