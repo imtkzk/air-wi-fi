@@ -540,6 +540,7 @@ ul.btn-box .btn-secondary a:hover {
 .caution01 li {
   text-indent: -2.5em;
   padding-left: 2.5em;
+  font-size: 2.08333vw;
 }
 
 .caution01 li:before {
@@ -784,6 +785,9 @@ ul.btn-box .btn-secondary a:hover {
   .caution01 {
     max-width: 800px;
   }
+  .caution01 li {
+    font-size: 1.04167vw;
+  }
   .caution02 {
     max-width: 800px;
   }
@@ -829,6 +833,12 @@ ul.btn-box .btn-secondary a:hover {
   }
   .sec-title h2 img {
     width: 236px;
+  }
+  .caution01 {
+    max-width: 800px;
+  }
+  .caution01 li {
+    font-size: 15px;
   }
 }
 
@@ -3476,7 +3486,7 @@ ul.btn-box .btn-secondary a:hover {
 /*  company CSS
 ------------------------------------------------------------------------------*/
 .company {
-  margin-top: 180px;
+  margin-top: 13.02083vw;
   padding: 5em 0;
   width: 96%;
   max-width: 1000px;
@@ -3485,7 +3495,7 @@ ul.btn-box .btn-secondary a:hover {
 
 .company h2 {
   font-weight: 600;
-  font-size: 24px;
+  font-size: 6.25vw;
   margin: 2em 0;
 }
 
@@ -3521,14 +3531,144 @@ ul.btn-box .btn-secondary a:hover {
 }
 
 @media screen and (min-width: 769px) {
+  .company {
+    margin-top: 6.94444vw;
+  }
   .company h2 {
-    font-size: 36px;
+    font-size: 3.125vw;
   }
   .company table tbody tr th {
     display: revert;
   }
   .company table tbody tr td {
     display: revert;
+  }
+}
+
+@media screen and (min-width: 769px) and (min-width: 1441px) {
+  .company {
+    margin-top: 100px;
+  }
+  .company h2 {
+    font-size: 24px;
+  }
+}
+
+/*  privacypolicy CSS
+------------------------------------------------------------------------------*/
+.privacypolicy {
+  margin-top: 13.02083vw;
+  padding: 5em 0;
+  width: 96%;
+  max-width: 88.54167vw;
+  margin: 2em auto;
+}
+
+.privacypolicy p {
+  margin-bottom: 2.60417vw;
+}
+
+.privacypolicy h2 {
+  font-weight: 600;
+  font-size: 6.25vw;
+  margin: 2em 0;
+}
+
+.privacypolicy dl {
+  margin: 3.90625vw auto;
+}
+
+.privacypolicy dl dt {
+  font-weight: 600;
+  font-size: 3.90625vw;
+  border-bottom: 1px solid #ccc;
+}
+
+.privacypolicy dl dt .num {
+  font-family: "Hemi", sans-serif;
+  margin-right: .2em;
+}
+
+.privacypolicy dl dd {
+  margin-top: 2.60417vw;
+  margin-bottom: 2.60417vw;
+}
+
+.privacypolicy dl dd .privacypolicy-list {
+  counter-reset: item;
+  margin: 1.30208vw auto;
+  text-align: left;
+  padding-left: 1em;
+}
+
+.privacypolicy dl dd .privacypolicy-list li {
+  text-indent: -2.5em;
+  padding-left: 2.5em;
+}
+
+.privacypolicy dl dd .privacypolicy-list li:before {
+  counter-increment: item;
+  padding-right: 0.5em;
+  font-weight: 600;
+}
+
+.privacypolicy dl dd .list02 li:before {
+  content: "2-" counter(item);
+}
+
+.privacypolicy dl dd .list04 li:before {
+  content: "4-" counter(item);
+}
+
+@media screen and (min-width: 769px) {
+  .privacypolicy {
+    margin-top: 6.94444vw;
+    max-width: 69.44444vw;
+  }
+  .privacypolicy p {
+    margin-bottom: 1.38889vw;
+  }
+  .privacypolicy h2 {
+    font-size: 1.66667vw;
+  }
+  .privacypolicy dl {
+    margin: 2.08333vw auto;
+  }
+  .privacypolicy dl dt {
+    font-size: 1.25vw;
+  }
+  .privacypolicy dl dd {
+    margin-top: 1.38889vw;
+    margin-bottom: 1.38889vw;
+  }
+  .privacypolicy dl dd .privacypolicy-list {
+    margin: 0.69444vw auto;
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  .privacypolicy {
+    margin-top: 100px;
+    max-width: 1000px;
+  }
+  .privacypolicy p {
+    margin-bottom: 20px;
+  }
+  .privacypolicy h2 {
+    font-size: 24px;
+  }
+  .privacypolicy dl {
+    margin: 30px auto;
+  }
+  .privacypolicy dl dt {
+    font-size: 18px;
+  }
+  .privacypolicy dl dd {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .privacypolicy dl dd .privacypolicy-list {
+    margin: 10px auto;
   }
 }
 /*# sourceMappingURL=style.css.map */

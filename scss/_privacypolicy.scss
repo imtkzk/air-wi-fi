@@ -1,0 +1,111 @@
+// main: ../style.scss
+
+/*  privacypolicy CSS
+------------------------------------------------------------------------------*/
+.privacypolicy {
+  margin-top: vw-sp(100);
+  padding: 5em 0;
+  width: 96%;
+  max-width: vw-sp(680);
+  margin: 2em auto;
+  p{
+    margin-bottom: vw-sp(20);
+  }
+  h2 {
+    font-weight: 600;
+    font-size: vw-sp(48);
+    margin: 2em 0;
+  }
+  dl{
+    margin: vw-sp(30) auto;
+    dt{
+      font-weight: 600;
+      font-size: vw-sp(30);
+      border-bottom: 1px solid #ccc;
+      .num{
+        font-family: $font2;
+        margin-right: .2em;
+      }
+    }
+    dd{
+      margin-top: vw-sp(20);
+      margin-bottom: vw-sp(20);
+      .privacypolicy-list{
+        counter-reset: item;
+        margin: vw-sp(10) auto;
+        text-align: left;
+        padding-left: 1em;
+        li {
+          text-indent: -2.5em;
+          padding-left: 2.5em;
+        }
+        li:before {
+          counter-increment: item;
+          padding-right: 0.5em;
+          font-weight: 600;
+        }
+      }
+      .list02{
+        li:before {
+          content: "2-" counter(item);
+        }
+      }
+      .list04{
+        li:before {
+          content: "4-" counter(item);
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: $breakpoint1) {
+  .privacypolicy {
+    margin-top: vw-pc(100);
+    max-width: vw-pc(1000);
+    p{
+      margin-bottom: vw-pc(20);
+    }
+    h2 {
+      font-size: vw-pc(24);
+    }
+    dl{
+      margin: vw-pc(30) auto;
+      dt{
+        font-size: vw-pc(18);
+      }
+      dd{
+        margin-top: vw-pc(20);
+        margin-bottom: vw-pc(20);
+        .privacypolicy-list{
+          margin: vw-pc(10) auto;
+        }
+    }
+  }
+  }
+}
+
+  @media screen and (min-width: $breakpoint2) {
+    .privacypolicy {
+      margin-top: 100px;
+      max-width: 1000px;
+      p{
+        margin-bottom: 20px;
+      }
+      h2 {
+        font-size: 24px;
+      }
+      dl{
+        margin: 30px auto;
+        dt{
+          font-size: 18px;
+        }
+        dd{
+          margin-top: 20px;
+          margin-bottom: 20px;
+          .privacypolicy-list{
+            margin: 10px auto;
+          }
+      }
+    }
+  }
+}

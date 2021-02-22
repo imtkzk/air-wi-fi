@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=yes"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <title>AiR-Wi-Fi</title>
+    <meta name="description" content="" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+
+  <body id="privacypolicy">
+    <div id="hamburger">
+      <div class="hamburger_btn" @click="ActiveBtn=!ActiveBtn">
+        <span
+          class="line line_01"
+          v-bind:class="{'btn_line01':ActiveBtn}"
+        ></span>
+        <span
+          class="line line_02"
+          v-bind:class="{'btn_line02':ActiveBtn}"
+        ></span>
+        <span
+          class="line line_03"
+          v-bind:class="{'btn_line03':ActiveBtn}"
+        ></span>
+      </div>
+      <transition name="menu">
+        <div class="menu" v-show="ActiveBtn">
+          <ul class="nav">
+            <li><a href="index.html">TOP</a></li>
+            <li><a href="index.html#point">ポイント</a></li>
+            <li><a href="index.html#flow">ご利用の流れ</a></li>
+            <li><a href="index.html#price">各種料金</a></li>
+            <li><a href="index.html#option">オプション</a></li>
+            <li><a href="index.html#overseas">海外利用</a></li>
+            <li><a href="index.html#faq">Q＆A</a></li>
+            <li class="nav-btn"><a href="delivery.html">お申し込み</a></li>
+            </li>
+          </ul>
+        </div>
+      </transition>
+    </div>
+    <header id="header" class="header">
+      <div class="header-logo">
+        <h1>
+          <a href="index.html"
+            ><img
+              src="img/common/header-logo.png"
+              srcset="
+                img/common/header-logo.png    1x,
+                img/common/header-logo-2x.png 2x
+              "
+              alt="AiR-Wi-Fi(エアワイファイ)"
+          /></a>
+        </h1>
+      </div>
+      <ul class="nav">
+        <li><a href="index.html">TOP</a></li>
+        <li><a href="index.html#point">ポイント</a></li>
+        <li><a href="index.html#flow">ご利用の流れ</a></li>
+        <li><a href="index.html#price">各種料金</a></li>
+        <li><a href="index.html#option">オプション</a></li>
+        <li><a href="index.html#overseas">海外利用</a></li>
+        <li><a href="index.html#faq">Q＆A</a></li>
+        <li class="nav-btn"><a href="delivery.html">お申し込み</a></li>
+      </ul>
+    </header>
+    <main class="main">
+      <section class="privacypolicy">
+        <h2>株式会社Ocean Map プライバシーポリシー</h2>
+        <p class="right">2021年2月1日 制定</p>
+        <p>株式会社Ocean Map（以下、当社とする）は、お客様の個人情報保護に対する重要性を強く認識し、個人情報の保護に関連する法令（以下、個人情報保護法とする）を堅く順守するとともに、以下で定めるお客様の個人情報保護に関連する一連の趣旨（以下、プライバシーポリシーとする）をもとに、個人情報の適切な取り扱い、ならびに情報の保護に努めます。</p>
+        <dl class="privacypolicy-lists">
+          <dt>個人情報の定義</dt>
+          <dd>プライバシーポリシーにおいて、個人情報とは、個人情報保護法第２条１項により定義された個人情報、すなわち、生存する個人に関する情報であり、当該情報に含まれる氏名、生年月日その他の記述により特定個人を識別することができるもの（他の情報と容易に照合することができ、それにより特定個人を識別することができる情報を含む）を意味します。</dd>
+          <dt><span class="num">01.</span>個人情報の取得に関して</dt>
+          <dd>当社は以下で定める「個人情報の利用目的」の範囲内で、適切かつ公正であると当社ならびに法令が判断する手段でのみ、お客様の個人情報を取得いたします。
+            個人情報の提供に関してはお客様の任意によりますが、事業の運営上必要となる情報を提供いただけない際には、商品およびサービスの円滑な提供をできかねる場合がございます。
+            また、お客様に対する電話での応対時には、当社が運営する事業およびサービスの品質向上を目的に、お客様との通話や一連のやり取りを記録、録音させていただく場合がございます。</dd>
+            <dt><span class="num">02.</span>個人情報の利用目的に関して</dt>
+            <dd>当社がお客様本人もしくはその代理人より取得する個人情報は、以下の目的で利用します。<br>
+            <ol class="privacypolicy-list list02">
+              <li>お客様から寄せられたお問合せへの対応、または左記に関連する各種調査の目的</li>
+              <li>当社が提供する商品、サービス、各種キャンペーンに関するお知らせの目的 </li>
+              <li>上記を含む、お客様およびその関係者に有益と考えられる各種情報のご案内の目的</li>
+              <li>商品およびサービスの提供に伴う、請求収納および債権保全の目的</li>
+              <li>その他、当社事業の運営上必要があり、委託した・された関連業務を遂行する目的</li>
+            </ol></dd>
+            <dt><span class="num">03.</span>当社事業の委託に関して</dt>
+            <dd>当社では、当社が運営する事業に関連する一部の業務をほか事業者へ委託、外注する場合がございます。業務委託を行う事業者に関しましては個人情報の取り扱いに関する重要性を十分に認識し、コンプライアンスの意識が整備された事業者を選定し、当該の事業者に対しては当社の認識する目的の履行に必要な範囲でのみお客様の個人情報を提供いたします。</dd>
+            <dt><span class="num">04.</span>第三者に対する個人情報の提供に関して</dt>
+            <dd>当社は以下に定める範囲内でのみ、お客様の個人情報を第三者に対して開示いたします。
+              また、お客様の個人情報を第三者に提供するにあたり、個人情報の利用目的に合致する情報の範囲を超えたお客様の個人情報を第三者に開示および提供することはございません。<br>
+            <ol class="privacypolicy-list list04">
+              <li>お客様本人もしくはその代理人による同意が得られた場合</li>
+              <li>裁判所、警察、検察庁、税務署またはこれらに準じた権限を有する機関から個人情報の開示を命じられた場合</li>
+              <li>お客様が当社に対し支払うべき料金その他の決済を行うために、金融機関、クレジットカード会社、回収代行業者そのほかの決済またはその代行を行う事業者に開示する場合</li>
+              <li>お客様およびその関係者の生命、身体または財産の保護のために個人情報の開示が求められ、対象となるお客様及びその関係者の同意をあらかじめ得ることが困難である場合</li>
+              <li>個人情報保護法その他の法令により認められた場合</li>
+              <li>当社が行う業務の全部または一部を第三者に委託する場合</li>
+              <li>当社に対して秘密保持義務を負う者に対して開示する場合</li>
+              <li>合併、営業譲渡その他の事由による事業の承継が必要となる場合</li>
+              <li>当社が法人格として保有する最低限の権利を行使する必要が生じた場合</li>
+            </ol>
+            その他、お客様がアフィリエイト・サービス・プロバイダ（以下、ASPとする）各社の運営するASPサービスから商品およびサービスの注文を行った場合には、当社からASPに対し商品等で取得した個人情報、商品の購入履歴、サービスの利用申込み履歴、その他商品又はサービスに関する情報を連携もしくは個人情報の開示をさせていただく場合がございます。
+          <h3>第三者に対する個人情報の提供の手段</h3>
+          郵便物、音声電話、ファックス、インターネット、電子メール、その他書面を使用します。</dd>
+          <dt><span class="num">05.</span>お客様から提供された個人情報の管理に関して</dt>
+          <dd>当社はお客様から提供された各種の個人情報について、不正アクセス、紛失、破壊、改ざん、漏えいなどのリスクを十分に認識し、合理的かつ技術的な安全対策等を実施すると共に、お客様から提供された個人情報の管理に関する問題が発生した場合は適切な措置を講じます。</dd>
+          <dt><span class="num">06.</span>コンプライアンス（法令規範）の遵守</dt>
+          <dd>当社は、日本国が定める個人情報に関する法令、指針、その他の規範及び社会秩序を遵守し、お客様から提供を受けた各種個人情報およびそれに類する情報の適切な保護に努めます。</dd>
+          <dt><span class="num">07.</span>当社事業の継続的改善に関して</dt>
+          <dd>当社は運営する事業やその他取り組みの改善・整備に努め、継続的な改善を実現します。</dd>
+        </dl>
+        <p class="right">2021年2月1日 制定</p>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-nav">
+        <ul>
+          <li><a href="">お問い合わせ</a></li>
+          <li><a href="">利用規約</a></li>
+          <li><a href="privacypolicy.html">プライバシーポリシー</a></li>
+          <li><a href="company.html">会社概要・特定商取引法に基づく表記</a></li>
+        </ul>
+      </div>
+      <div class="footer-logo">
+        <a href="index.html"><img src="img/common/footer-logo.png" srcset="img/common/footer-logo.png 1x, img/common/footer-logo-2x.png 2x" alt="AiR-Wi-Fi(エアワイファイ)"></a>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <script src="js/lib/ofi.js"></script>
+    <script src="js/common.js"></script>
+    <script>
+      objectFitImages()
+    </script>
+  </body>
+</html>

@@ -99,6 +99,7 @@ ul.btn-box {
   li {
     text-indent: -2.5em;
     padding-left: 2.5em;
+    font-size: vw-sp(16);
   }
   li:before {
     counter-increment: item;
@@ -303,6 +304,9 @@ ul.btn-box {
   }
   .caution01 {
     max-width: 800px;
+    li{
+    font-size: vw-pc(15);
+    }
   }
   .caution02 {
     max-width: 800px;
@@ -353,6 +357,12 @@ ul.btn-box {
         img{
           width: 236px;
         }
+      }
+    }
+    .caution01 {
+      max-width: 800px;
+      li{
+      font-size: 15px;
       }
     }
 }
